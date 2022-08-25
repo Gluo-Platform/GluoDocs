@@ -1,6 +1,7 @@
 # Post Resource
-## Getting posts % GET https://api.gluo.xyz/post/{post_id}
-Returns a post object if the provided post_id exists.
+## Getting posts 
+### `GET` https://xxxxxxxxx/xxxxxxxxx/{post_id}
+Returns a `post` object if the provided `post_id` exists.
 ```json
 {
    "post_id": 2,
@@ -18,27 +19,13 @@ Returns a post object if the provided post_id exists.
    "comments": 1,
    "is_private": false,
    "visible": false,
-   "validated": true,
-   "reactions": {
-      "40": {
-         "reaction_id": 40,
-         "parent_name": "ayumi",
-         "parent_pfp": "ayumi.jpg",
-         "parent_badge": "team",
-         "description": "",
-         "upload_date": 1659524423,
-         "likes": 0,
-         "liked": false,
-         "is_private": false,
-         "visible": true,
-         "validated": true
-      }
-   }
+   "validated": true
 }
 ```
-_Move reactions to their own endpoint?_
+_Move reactions to their own endpoint_
 
-## Creating posts % POST https://api.gluo.xyz/createpost
+## Creating posts
+### `POST` https://xxxxxxxxx/xxxxxxxxxxxx
 JSON Parameters required:
 | field | type   | details |
 |-------|--------|---------|
@@ -46,5 +33,6 @@ JSON Parameters required:
 | description  | string | Post description (1-500 characters) |
 | topic  | string | Post topic (1-17 characters) |
 
-## Deleting posts % DELETE https://api.gluo.xyz/deletepost/{post_id}
+## Deleting posts 
+### `DELETE` https://xxxxxxxxx/xxxxxxxxxxxxxxx/{post_id}
 Deletes the post, only accessible for the owners of said post. Returns a [success response](/docs/resources/common_responses.md#success).
