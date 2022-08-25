@@ -5,9 +5,10 @@ Returns a `post` object if the provided `post_id` exists.
 ```json
 {
    "post_id": 2,
-   "parent_name": "kipteam",
-   "parent_pfp": "kipteam.png",
-   "parent_badge": "team",
+   "user_id" : 2,
+   "username": "kipteam",
+   "user_pfp": "kipteam.png",
+   "permission_level": 5,
    "name": "another test",
    "description": "YEEEE",
    "topic": "test",

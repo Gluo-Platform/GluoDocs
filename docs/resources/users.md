@@ -1,4 +1,4 @@
-# Post Resource
+# User Resource
 ## Getting users 
 ### `GET` https://xxxxxxxxx/xxxx/xxxxxxxx/{username} OR `GET` https://xxxxxxxxx/xxxx/xxxxxxxx/{user_id}
 Returns a `user object` if the provided `username` or `user_id` exists.
@@ -8,18 +8,15 @@ Returns a `user object` if the provided `username` or `user_id` exists.
    "username": "kipteam",
    "status": "Hi, this platform is great cuz Gluo",
    "about": "Hi",
-   "badges": "['tester', 'moderator', 'administrator', 'team']",
    "pfp": "kipteam.png",
    "visible": true,
    "private": false,
    "validated": false,
-   "creation_date":1659088389,
-   "moderator":true,
-   "administrator":true,
-   "team":true,
-   "following":8,
-   "followers":14,
-   "badge":"team"
+   "premium": 2,
+   "creation_date": 1659088389,
+   "following": 8,
+   "followers": 14,
+   "permission_level": 5,
 }
 ```
 
@@ -32,16 +29,16 @@ Returns the provided user's followers IF they allowed this in their settings.
       "ToroEen": {
          "user_id": 10,
          "username": "ToroEen",
-         "badge": "tester",
          "pfp": "ToroEen.png",
-         "status": "Hi, I am a Gluo user!"
+         "status": "Hi, I am a Gluo user!",
+         "permission_level": 5,
       },
       "kipteam": {
          "user_id": 2,
          "username": "kipteam",
-         "badge": "team",
          "pfp": "kipteam.png",
-         "status":"Hi, this platform is great cuz Gluo"
+         "status":"Hi, this platform is great cuz Gluo",
+         "permission_level": 5,
       }
    }
 }
@@ -56,16 +53,16 @@ Returns the users a user follows IF they allowed this in their settings.
       "kipteam":{
          "user_id":2,
          "username":"kipteam",
-         "badge":"team",
          "pfp":"kipteam.png",
-         "status":"Hi, this platform is great cuz Gluo"
+         "status":"Hi, this platform is great cuz Gluo",
+         "permission_level": 5,
       },
       "Gluo":{
          "user_id":32,
          "username":"Gluo",
-         "badge":"",
          "pfp":"Gluo.png",
-         "status":"Hi, I am Gluo!"
+         "status":"Hi, I am Gluo!",
+         "permission_level": 5,
       },
    }
 }

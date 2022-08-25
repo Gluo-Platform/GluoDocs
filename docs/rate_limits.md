@@ -14,7 +14,7 @@ The following endpoints are seen as low level endpoints:
 - Delete a reaction
 
 ## Medium level `(ml)`
-This level is for endpoints that can't handle too much request whilst allowing more than a high level endpoint. Any endpoint of medium level can be requested 15 times per second.  
+This level is for endpoints that can't handle too many request whilst allowing more than a high level endpoint. Any endpoint of medium level can be requested 15 times per second.  
 These endpoints are of medium level:
 - getting all posts by a user
 
