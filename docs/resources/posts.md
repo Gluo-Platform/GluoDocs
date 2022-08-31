@@ -4,11 +4,11 @@
 Returns a `post` object if the provided `post_id` exists.
 ```json
 {
-   "post_id": 2,
    "user_id" : 2,
    "username": "kipteam",
    "user_pfp": "kipteam.png",
    "permission_level": 5,
+   "post_id": 2,
    "name": "another test",
    "description": "YEEEE",
    "topic": "test",
@@ -23,7 +23,6 @@ Returns a `post` object if the provided `post_id` exists.
    "validated": true
 }
 ```
-_Move reactions to their own endpoint_
 
 ## Creating posts
 ### `POST` https://xxxxxxxxx/xxxxxxxxxxxx
@@ -33,6 +32,7 @@ JSON Parameters required:
 | name  | string | Post title (1-25 characters) |
 | description  | string | Post description (1-500 characters) |
 | topic  | string | Post topic (1-17 characters) |
+_image uploading coming soon_
 
 ## Deleting posts 
 ### `DELETE` https://xxxxxxxxx/xxxxxxxxxxxxxxx/{post_id}
