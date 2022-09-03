@@ -3,13 +3,43 @@
 ### `GET` https://xxxxxxxxx/xxxxxxxxxx/{reaction_id}
 Returns a `reaction object` if the provided `reaction_id` exists.
 ```json
-doesn't exist, will come
+{
+    "user_id": 2,
+    "username": "kipteam",
+    "user_pfp": "kipteam.png",
+    "permission_level": 0,
+    "reaction_id": 83,
+    "description": "using trello on mobile is annoying",
+    "upload_date": 1659804320,
+    "liked": true,
+    "likes": 1
+}
 ```
 
 ## Getting all reactions
-### `GET` https://xxxxxxxxx/xxxxxxxxxxxxx/{post_id}
+### `GET` https://xxxxxxxxx/xxxxx/xxxxxxxxxxxxx/{post_id}
 ```json
-doesn't exist either, will come too
+[{
+    "user_id": 13,
+    "username": "ayumi",
+    "user_pfp": "ayumi.jpg",
+    "permission_level": 0,
+    "reaction_id": 82,
+    "description": "use trello board when ",
+    "upload_date": 1659804017,
+    "liked": false,
+    "likes": 0
+}, {
+    "user_id": 2,
+    "username": "kipteam",
+    "user_pfp": "kipteam.png",
+    "permission_level": 0,
+    "reaction_id": 83,
+    "description": "using trello on mobile is annoying",
+    "upload_date": 1659804320,
+    "liked": true,
+    "likes": 1
+}]
 ```
 
 ## Creating reactions 
