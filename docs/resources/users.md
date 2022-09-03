@@ -64,48 +64,38 @@ Returns all posts by the provided user.
 
 ## Getting a user's followers
 ### `GET` https://xxxxxxxxx/xxxxxxxxx/{user_id}
-Returns the provided user's followers IF they allowed this in their settings. _will change_
+Returns the provided user's followers IF they allowed this in their settings.
 ```json
-{
-   "followers": {
-      "ToroEen": {
-         "user_id": 10,
-         "username": "ToroEen",
-         "pfp": "ToroEen.png",
-         "status": "Hi, I am a Gluo user!",
-         "permission_level": 5,
-      },
-      "kipteam": {
-         "user_id": 2,
-         "username": "kipteam",
-         "pfp": "kipteam.png",
-         "status":"Hi, this platform is great cuz Gluo",
-         "permission_level": 5,
-      }
-   }
-}
+[{
+    "user_id": 2,
+    "username": "kipteam",
+    "user_pfp": "kipteam.png",
+    "status": "Hi, this platform is great cuz Gluo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "permission_level": 0
+}, {
+    "user_id": 32,
+    "username": "Gluo",
+    "user_pfp": "Gluo.png",
+    "status": "Hi, I am Gluo!",
+    "permission_level": 0
+}]
 ```
 
 ## Getting the people a user follows
 ### `GET` https://xxxxxxxxx/xxxxxxxxx/{user_id}
-Returns the users a user follows IF they allowed this in their settings. _will change_
+Returns the users a user follows IF they allowed this in their settings.
 ```json
-{
-   "following": {
-      "kipteam": {
-         "user_id": 2,
-         "username": "kipteam",
-         "pfp": "kipteam.png",
-         "status": "Hi, this platform is great cuz Gluo",
-         "permission_level": 5,
-      },
-      "Gluo": {
-         "user_id": 32,
-         "username": "Gluo",
-         "pfp": "Gluo.png",
-         "status": "Hi, I am Gluo!",
-         "permission_level": 5,
-      },
-   }
-}
+[{
+    "user_id": 2,
+    "username": "kipteam",
+    "user_pfp": "kipteam.png",
+    "status": "Hi, this platform is great cuz Gluo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "permission_level": 0
+}, {
+    "user_id": 32,
+    "username": "Gluo",
+    "user_pfp": "Gluo.png",
+    "status": "Hi, I am Gluo!",
+    "permission_level": 0
+}]
 ```
