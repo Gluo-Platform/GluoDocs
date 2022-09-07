@@ -5,19 +5,21 @@ You can search for users by their ID by adding `?id=true` at the end of the url
 Returns a `user object` if the provided `username` or `user_id` exists.
 ```json
 {
-   "user_id": 2,
-   "username": "kipteam",
-   "status": "Hi, this platform is great cuz Gluo",
-   "about": "Hi",
-   "pfp": "kipteam.png",
-   "visible": true,
-   "private": false,
-   "validated": false,
-   "premium": 2,
-   "creation_date": 1659088389,
-   "following": 8,
-   "followers": 14,
-   "permission_level": 5,
+    "user_id": 10,
+    "username": "ToroEen",
+    "user_pfp": "ToroEen.png",
+    "permission_level": 0,
+    "status": "Hi, I am a Gluo user!",
+    "about": "Another awesome Gluo user.",
+    "visible": true,
+    "private": true,
+    "validated": false,
+    "premium": 0,
+    "creation_date": 1659088389,
+    "followers": 4,
+    "following": 3,
+    "is_following": false,
+    "is_requested": true
 }
 ```
 
