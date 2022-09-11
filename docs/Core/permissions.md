@@ -1,4 +1,5 @@
 # General permissions
+These are the permission=levels used over the application.
 | permission | value   |
 |-------|--------|
 | user | 1 |
@@ -9,6 +10,7 @@
 | team  | 32 |
 
 # Group permissions
+Permissions used to differentiate the members of a group. With all permission-levels come more actions.
 | permission | value   |
 |-------|--------|
 | member  | 1 |
@@ -16,6 +18,7 @@
 | administrator  | 4 |
 
 # Premium levels
+All premium permissions and their benefits.
 | permission | value   |
 |-------|--------|
 | animated_avatar | 1 |
