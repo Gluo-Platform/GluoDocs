@@ -1,11 +1,11 @@
 # Rate limiting
 Our API works with three levels of rate limits.
-- `(ll)` Low level
-- `(ml)` Medium level
 - `(hl)` High level
+- `(ml)` Medium level
+- `(ll)` Low level
 Every endpoint has a specific has one of these three levels according to how frequently said endpoint can be accessed. 
 
-## Low level `(ll)`
+## High level `(hl)`
 This is the one with the highest rate limit. Any request to a low level endpoint is limited to 1 every second.  
 The following endpoints are seen as low level endpoints:
 - Creating a post
@@ -18,7 +18,7 @@ This level is for endpoints that can't handle too many request whilst allowing m
 These endpoints are of medium level:
 - getting all posts by a user
 
-## High level `(hl)`
+## Low level `(ll)`
 All endpoints with this rate limit are fairly accessible. You can make up to 30 requests per second. 
 Most of our endpoints have a high level rate limit:
 - getting a user
