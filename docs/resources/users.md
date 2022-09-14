@@ -8,7 +8,7 @@ Returns a `user object` if the provided `username` or `user_id` exists.
     "user_id": 10,
     "username": "ToroEen",
     "user_pfp": "ToroEen.png",
-    "permission_level": 0,
+    "permissions": 0,
     "status": "Hi, I am a Gluo user!",
     "about": "Another awesome Gluo user.",
     "visible": true,
@@ -31,7 +31,7 @@ Returns all posts by the provided user.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permission_level": 0,
+    "permissions": 0,
     "post_id": 4,
     "name": "test",
     "description": "temp",
@@ -48,7 +48,7 @@ Returns all posts by the provided user.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permission_level": 0,
+    "permissions": 0,
     "post_id": 2,
     "name": "another test",
     "description": "YEEEE",
@@ -73,13 +73,13 @@ Returns the provided user's followers IF they allowed this in their settings.
     "username": "kipteam",
     "user_pfp": "kipteam.png",
     "status": "Hi, this platform is great cuz Gluo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "permission_level": 0
+    "permissions": 0
 }, {
     "user_id": 32,
     "username": "Gluo",
     "user_pfp": "Gluo.png",
     "status": "Hi, I am Gluo!",
-    "permission_level": 0
+    "permissions": 0
 }]
 ```
 
@@ -92,12 +92,12 @@ Returns the users a user follows IF they allowed this in their settings.
     "username": "kipteam",
     "user_pfp": "kipteam.png",
     "status": "Hi, this platform is great cuz Gluo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "permission_level": 0
+    "permissions": 0
 }, {
     "user_id": 32,
     "username": "Gluo",
     "user_pfp": "Gluo.png",
     "status": "Hi, I am Gluo!",
-    "permission_level": 0
+    "permissions": 0
 }]
 ```

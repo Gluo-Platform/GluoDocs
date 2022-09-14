@@ -7,7 +7,7 @@ Returns a `reaction object` if the provided `reaction_id` exists.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permission_level": 0,
+    "permissions": 0,
     "reaction_id": 83,
     "description": "using trello on mobile is annoying",
     "upload_date": 1659804320,
@@ -23,7 +23,7 @@ Returns a `reaction object` if the provided `reaction_id` exists.
     "user_id": 13,
     "username": "ayumi",
     "user_pfp": "ayumi.jpg",
-    "permission_level": 0,
+    "permissions": 0,
     "reaction_id": 82,
     "description": "use trello board when ",
     "upload_date": 1659804017,
@@ -33,7 +33,7 @@ Returns a `reaction object` if the provided `reaction_id` exists.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permission_level": 0,
+    "permissions": 0,
     "reaction_id": 83,
     "description": "using trello on mobile is annoying",
     "upload_date": 1659804320,
@@ -52,4 +52,4 @@ JSON Parameters required:
 
 ## Deleting reactions 
 ### `DELETE` https://xxxxxxxxx/xxxxxxxxxxxxxxxx/{reaction_id}
-Deletes the reaction, only accessible for the owners of said reaction. Returns a [success response](/docs/resources/common_responses.md#success).
+Deletes the reaction, only accessible for the owners of said reaction or the owner of the post.

@@ -7,7 +7,7 @@ Returns a `post` object if the provided `post_id` exists.
    "user_id" : 2,
    "username": "kipteam",
    "user_pfp": "kipteam.png",
-   "permission_level": 5,
+   "permissions": 5,
    "post_id": 2,
    "name": "another test",
    "description": "YEEEE",
@@ -36,4 +36,4 @@ _image uploading coming soon_
 
 ## Deleting posts 
 ### `DELETE` https://xxxxxxxxx/xxxxxxxxxxxxxxx/{post_id}
-Deletes the post, only accessible for the owners of said post. Returns a [success response](/docs/resources/common_responses.md#success).
+Deletes the post, only accessible for the owners of said post.
