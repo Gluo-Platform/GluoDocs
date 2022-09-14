@@ -8,13 +8,14 @@ Returns a `user object` if the provided `username` or `user_id` exists.
     "user_id": 10,
     "username": "ToroEen",
     "user_pfp": "ToroEen.png",
-    "permissions": 0,
+    "permissions": 1,
+    "premium": 0,
     "status": "Hi, I am a Gluo user!",
     "about": "Another awesome Gluo user.",
-    "visible": true,
     "private": true,
+    "visible": true,
     "validated": false,
-    "premium": 0,
+    "public_interactions": false,
     "creation_date": 1659088389,
     "followers": 4,
     "following": 3,
@@ -31,7 +32,8 @@ Returns all posts by the provided user.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permissions": 0,
+    "permissions": 63,
+    "premium": 0,
     "post_id": 4,
     "name": "test",
     "description": "temp",
@@ -48,7 +50,8 @@ Returns all posts by the provided user.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permissions": 0,
+    "permissions": 63,
+    "premium": 0,
     "post_id": 2,
     "name": "another test",
     "description": "YEEEE",
@@ -69,17 +72,19 @@ Returns all posts by the provided user.
 Returns the provided user's followers IF they allowed this in their settings.
 ```json
 [{
-    "user_id": 2,
-    "username": "kipteam",
-    "user_pfp": "kipteam.png",
-    "status": "Hi, this platform is great cuz Gluo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "permissions": 0
+    "user_id": 10,
+    "username": "ToroEen",
+    "user_pfp": "ToroEen.png",
+    "status": "Hi, I am a Gluo user!",
+    "permissions": 1,
+    "premium": 0
 }, {
-    "user_id": 32,
-    "username": "Gluo",
-    "user_pfp": "Gluo.png",
-    "status": "Hi, I am Gluo!",
-    "permissions": 0
+    "user_id": 43,
+    "username": "2",
+    "user_pfp": "2.png",
+    "status": "2",
+    "permissions": 1,
+    "premium": 0
 }]
 ```
 
@@ -88,16 +93,18 @@ Returns the provided user's followers IF they allowed this in their settings.
 Returns the users a user follows IF they allowed this in their settings.
 ```json
 [{
-    "user_id": 2,
-    "username": "kipteam",
-    "user_pfp": "kipteam.png",
-    "status": "Hi, this platform is great cuz Gluo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "permissions": 0
+    "user_id": 10,
+    "username": "ToroEen",
+    "user_pfp": "ToroEen.png",
+    "status": "Hi, I am a Gluo user!",
+    "permissions": 1,
+    "premium": 0
 }, {
-    "user_id": 32,
-    "username": "Gluo",
-    "user_pfp": "Gluo.png",
-    "status": "Hi, I am Gluo!",
-    "permissions": 0
+    "user_id": 43,
+    "username": "2",
+    "user_pfp": "2.png",
+    "status": "2",
+    "permissions": 1,
+    "premium": 0
 }]
 ```

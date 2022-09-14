@@ -7,7 +7,8 @@ Returns a `post` object if the provided `post_id` exists.
    "user_id" : 2,
    "username": "kipteam",
    "user_pfp": "kipteam.png",
-   "permissions": 5,
+   "permissions": 63,
+   "premium": 0,
    "post_id": 2,
    "name": "another test",
    "description": "YEEEE",
@@ -18,7 +19,6 @@ Returns a `post` object if the provided `post_id` exists.
    "likes": 3,
    "liked": true,
    "comments": 1,
-   "is_private": false,
    "visible": false,
    "validated": true
 }

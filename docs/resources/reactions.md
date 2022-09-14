@@ -7,7 +7,8 @@ Returns a `reaction object` if the provided `reaction_id` exists.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permissions": 0,
+    "permissions": 63,
+    "premium": 0,
     "reaction_id": 83,
     "description": "using trello on mobile is annoying",
     "upload_date": 1659804320,
@@ -23,7 +24,8 @@ Returns a `reaction object` if the provided `reaction_id` exists.
     "user_id": 13,
     "username": "ayumi",
     "user_pfp": "ayumi.jpg",
-    "permissions": 0,
+    "permissions": 1,
+    "premium" : 0,
     "reaction_id": 82,
     "description": "use trello board when ",
     "upload_date": 1659804017,
@@ -33,7 +35,8 @@ Returns a `reaction object` if the provided `reaction_id` exists.
     "user_id": 2,
     "username": "kipteam",
     "user_pfp": "kipteam.png",
-    "permissions": 0,
+    "permissions": 63,
+    "premium": 0,
     "reaction_id": 83,
     "description": "using trello on mobile is annoying",
     "upload_date": 1659804320,
@@ -45,10 +48,10 @@ Returns a `reaction object` if the provided `reaction_id` exists.
 ## Creating reactions 
 ### `POST` https://xxxxxxxxx/xxxxxxxxxxxxxxxx
 JSON Parameters required:
-| field | type   | details |
-|-------|--------|---------|
-| post_id  | integer | Post ID of the post that the reaction should be appended to |
-| description  | string | Post description (1-500 characters) |
+| field | type   | details | can be empty |
+|-------|--------|---------|----------|
+| post_id  | integer | Post ID of the post that the reaction should be appended to | false |
+| description  | string | Post description (1-500 characters) | false |
 
 ## Deleting reactions 
 ### `DELETE` https://xxxxxxxxx/xxxxxxxxxxxxxxxx/{reaction_id}
