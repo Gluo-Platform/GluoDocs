@@ -21,6 +21,7 @@ These endpoints are of medium level:
 ## Low level `(ll)`
 All endpoints with this rate limit are fairly accessible. You can make up to 30 requests per second. 
 Most of our endpoints have a high level rate limit:
+- get all gluo related statistics
 - getting a user
 - getting a specific post
 - get a user's followers
