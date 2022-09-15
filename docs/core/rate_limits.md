@@ -16,13 +16,16 @@ The following endpoints are seen as low level endpoints:
 ## Medium level `(ml)`
 This level is for endpoints that can't handle too many request whilst allowing more than a high level endpoint. Any endpoint of medium level can be requested 15 times per second.  
 These endpoints are of medium level:
-- getting all posts by a user
+- get all posts by a user
+- get all posts under a topic
+- get all reactions under a post
 
 ## Low level `(ll)`
 All endpoints with this rate limit are fairly accessible. You can make up to 30 requests per second. 
 Most of our endpoints have a high level rate limit:
 - get all gluo related statistics
-- getting a user
-- getting a specific post
+- get a user
+- get a specific post
+- get a specific reaction
 - get a user's followers
 - get a user's following
