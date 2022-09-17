@@ -21,9 +21,10 @@ Permissions used to differentiate the members of a group. With all permission-le
 All premium permissions and their benefits.
 | permission | value   |
 |-------|--------|
-| animated_avatar | 1 |
-| doubled_text | 2 |
-| more_topic | 4 |
-| premium_only_topics | 8 |
-| premium_badge | 16 |
-| early_supporter_badge | 32 |
+| no_premium | 1 |
+| premium_badge | 2 |
+| early_supporter_badge | 4 |
+| animated_avatar | 8 |
+| doubled_text | 16 |
+| more_topics | 32 |
+| premium_only_topics | 64 |

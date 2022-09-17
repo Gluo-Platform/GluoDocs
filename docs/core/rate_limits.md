@@ -29,3 +29,4 @@ Most of our endpoints have a high level rate limit:
 - get a specific reaction
 - get a user's followers
 - get a user's following
+- get a list of 6 random topics
