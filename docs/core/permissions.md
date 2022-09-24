@@ -28,3 +28,4 @@ All premium permissions and their benefits.
 | doubled_text | 16 |
 | more_topics | 32 |
 | premium_only_topics | 64 |
+| bigger_upload_size | 128 |
