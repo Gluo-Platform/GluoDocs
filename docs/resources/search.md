@@ -15,6 +15,7 @@ Query formatting
 Some examples:
 ```js
 !user:kipteam //returns all users (1) with the exact username "kipteam"
+!post:kipteam //returns all posts with an title OR description being exactly "kipteam"
 !kipteam //returns all users (1) with the exact username "kipteam" and all posts with an exact title OR description of "kipteam" -> response shown below.
 ```
 Response:
