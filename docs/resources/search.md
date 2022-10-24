@@ -10,7 +10,7 @@ Query formatting
 | !  | string | Returns all exact user and post matches. |
 | user: | string | Returns all user matches. |
 | post: | string | Returns all post matches. |
-|  | string | Returns all post and user matches |
+| none | string | Returns all post and user matches |
 Some examples:
 ```js
 !user:kipteam //returns all users (1) with the exact username "kipteam"
