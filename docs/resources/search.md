@@ -6,11 +6,13 @@ Query formatting
 | prefix | actual query | response |
 |-------|--------|---------|
 | !user:  | string | Returns all exact user matches. |
+| !topic:  | string | Returns an exact topic matche (if one exists). |
 | !post:  | string | Returns all exact post matches. |
 | !  | string | Returns all exact user and post matches. |
 | user: | string | Returns all user matches. |
+| topic: | string | Returns all topic matches. |
 | post: | string | Returns all post matches. |
-|  | string | Returns all post and user matches |
+|  | string | Returns all user, topic and post matches |
 
 Some examples:
 ```js
