@@ -34,6 +34,7 @@ Response:
         "permissions": 63,
         "premium": 131
     }],
+    "topics": ["kipteam"],
     "posts": [{
         "user_id": 2,
         "username": "kipteam",
