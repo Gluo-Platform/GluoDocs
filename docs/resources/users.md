@@ -24,6 +24,10 @@ Returns a `user object` if the provided `username` or `user_id` exists.
 }
 ```
 
+## Get a profile picture
+### `GET` https://media.gluo.xyz/pfp/{user_pfp}
+Provide the `user_pfp` field attached in a [user](/docs/core/objects.md) object, get an image in return.
+
 ## Get the posts of a user
 ### `GET` https://xxxxxxxxx/xxxxxx/xxxxxxxxxx/{user_id}
 Returns all posts by the provided user.
