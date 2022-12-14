@@ -8,6 +8,7 @@
 | permissions  | integer | User [permissions](permissions.md#general-permissions) |
 | premium  | integer | User's [premium-level](permissions.md#premium-levels) |
 | status  | string | The user's status (1-75 characters) |
+
 Example response
 ```json
 {
@@ -37,6 +38,7 @@ Example response
 | following  | integer | Amount of people the user follows |
 | is_following  | boolean | Is the account making the api call following the user |
 | is_requested  | boolean | Has the account making the api call requested to follow the user |
+
 Example response
 ```json
 {
@@ -67,7 +69,9 @@ A post always contains a [simple user](objects.md#simple-user-object) object.
 | description | string | Post description (1-1000 characters) |
 | topic  | string | Post topic (1-17 characters) |
 | type  | int | The post type |
-and a lot more ...
+
+and a lot more to come
+
 ```json
 {
    "user_id" : 2,
