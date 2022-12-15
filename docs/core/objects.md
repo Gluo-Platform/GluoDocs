@@ -61,7 +61,7 @@ Example response
 ```
 
 ## Posts
-A post always contains a [simple user](objects.md#simple-user-object) object.
+A post always includes a [simple user](objects.md#simple-user-object) object.
 | field | type   | details |
 |-------|--------|---------|
 | post_id  | int | Unique post ID |
@@ -69,8 +69,12 @@ A post always contains a [simple user](objects.md#simple-user-object) object.
 | description | string | Post description (1-1000 characters) |
 | topic  | string | Post topic (1-17 characters) |
 | type  | int | The post type |
-
-and a lot more to come
+| attachment_name  | string | Returns an image name ([get image](/docs/resources/posts.md#get-a-post-attachment)) |
+| upload_date | int | Unix timestamp of upload date |
+| likes | int | Amount of likes on the post |
+| liked | boolean | Did the requesting account like the post |
+| reactions | int | Amount of reactions on the post |
+| validated | boolean | Is the post verified as safe |
 
 ```json
 {
@@ -80,20 +84,42 @@ and a lot more to come
    "permissions": 63,
    "premium": 0,
    "status": "Hi, I am a Gluo user!",
-   
    "post_id": 2,
    "name": "another test",
    "description": "YEEEE",
    "topic": "test",
    "type": 2,
-   "image_name": "1658484500.png",
+   "attachment_name": "1658484500.png",
    "upload_date": 1658484499,
    "likes": 3,
    "liked": true,
-   "comments": 1,
-   "visible": false,
+   "reactions": 1,
    "validated": true
 }
 ```
 
 ## Reactions
+A reaction always includes a [simple user](objects.md#simple-user-object) object.
+| field | type   | details |
+|-------|--------|---------|
+| reaction_id  | int | Unique reaction ID |
+| description | string | Reaction description (1-500 characters) |
+| upload_date | int | Unix timestamp of upload date |
+| likes | int | Amount of likes on the reaction |
+| liked | boolean | Did the requesting account like the reaction |
+
+```json
+{
+    "user_id": 2,
+    "username": "kipteam",
+    "user_pfp": "kipteam.png",
+    "permissions": 63,
+    "premium": 0,
+    "status": "Hi, I am a Gluo user!",
+    "reaction_id": 83,
+    "description": "using trello on mobile is annoying",
+    "upload_date": 1659804320,
+    "liked": true,
+    "likes": 1
+}
+```
