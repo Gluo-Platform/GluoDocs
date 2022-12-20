@@ -2,6 +2,7 @@
 ## Getting users 
 ### `GET` https://xxxxxxxxx/xxxx/xxxxxxxx/{user_query}
 You can search for users by their ID by adding `?id=true` at the end of the url.  
+To get your own account you can fill in the query as `@me`.
 Returns a [user](/docs/core/objects.md#extensive-user-object) object if the provided `username` or `user_id` exists.
 
 ## Get a profile picture

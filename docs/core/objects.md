@@ -74,16 +74,17 @@ A post always includes a [simple user](objects.md#simple-user-object) object.
 | likes | int | Amount of likes on the post |
 | liked | boolean | Did the requesting account like the post |
 | reactions | int | Amount of reactions on the post |
-| validated | boolean | Is the post verified as safe |
 
 ```json
 {
-   "user_id" : 2,
-   "username": "kipteam",
-   "user_pfp": "kipteam.png",
-   "permissions": 63,
-   "premium": 0,
-   "status": "Hi, I am a Gluo user!",
+   "user" : {
+        "user_id": 2,
+        "username": "kipteam",
+        "user_pfp": "kipteam.png",
+        "permissions": 63,
+        "premium": 0,
+        "status": "Hi, I am a Gluo user!",
+    },
    "post_id": 2,
    "name": "another test",
    "description": "YEEEE",
@@ -94,7 +95,6 @@ A post always includes a [simple user](objects.md#simple-user-object) object.
    "likes": 3,
    "liked": true,
    "reactions": 1,
-   "validated": true
 }
 ```
 
@@ -110,12 +110,14 @@ A reaction always includes a [simple user](objects.md#simple-user-object) object
 
 ```json
 {
-    "user_id": 2,
-    "username": "kipteam",
-    "user_pfp": "kipteam.png",
-    "permissions": 63,
-    "premium": 0,
-    "status": "Hi, I am a Gluo user!",
+    "user" : {
+        "user_id": 2,
+        "username": "kipteam",
+        "user_pfp": "kipteam.png",
+        "permissions": 63,
+        "premium": 0,
+        "status": "Hi, I am a Gluo user!",
+    },
     "reaction_id": 83,
     "description": "using trello on mobile is annoying",
     "upload_date": 1659804320,

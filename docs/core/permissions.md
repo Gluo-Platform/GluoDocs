@@ -1,4 +1,5 @@
-# General permissions
+# Gluo permissions
+## General permissions
 These are the permission=levels used over the application.
 | permission | value   |
 |-------|--------|
@@ -9,7 +10,7 @@ These are the permission=levels used over the application.
 | administrator  | 16 |
 | team  | 32 |
 
-# Group permissions
+## Group permissions
 Permissions used to differentiate the members of a group. With all permission-levels come more actions.
 | permission | value   |
 |-------|--------|
@@ -17,7 +18,7 @@ Permissions used to differentiate the members of a group. With all permission-le
 | management  | 2 |
 | administrator  | 4 |
 
-# Premium levels
+## Premium levels
 All premium permissions and their benefits.
 | permission | value   |
 |-------|--------|
