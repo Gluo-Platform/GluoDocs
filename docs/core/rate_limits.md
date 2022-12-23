@@ -10,8 +10,6 @@ This is the one with the highest rate limit. Any request to a high level endpoin
 The following endpoints are seen as high level endpoints:
 - Creating a post
 - Creating a reaction
-- Delete a post
-- Delete a reaction
 - Make a search
 
 ## Medium level `(ml)`
@@ -20,6 +18,8 @@ These endpoints are of medium level:
 - Get all posts by a user
 - Get all posts under a topic
 - Get all reactions under a post
+- Delete a post
+- Delete a reaction
 
 ## Low level `(ll)`
 All endpoints with this rate limit are fairly accessible. You can make up to 30 requests per second. 

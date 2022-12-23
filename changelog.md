@@ -1,6 +1,7 @@
-# ...
+# Unreleased (December)
 
 - **Minor**
+    - Fixed it so the previous buttons now continue at the bottom of the page.
     - Fixed /topics/home not working.
     - Fixed a bug with posts appearing private.
 
