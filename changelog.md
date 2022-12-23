@@ -1,11 +1,13 @@
-# Unreleased (December)
+# Changelogs
+## Unreleased (December)
 
 - **Minor**
+    - Added profile posts, use `@me` as the topic.
     - Fixed it so the previous buttons now continue at the bottom of the page.
     - Fixed /topics/home not working.
     - Fixed a bug with posts appearing private.
 
-# December 19 2022
+## December 19 2022
 
 - **Major**
     - Added pagination to posts and comments in the hopes of speeding up the experience. 
@@ -18,7 +20,7 @@
     - Fixed broken popup on reaction sharing.
     - Fixed search command showing wrong results in some rare cases.
 
-# November 30 2022
+## November 30 2022
 
 - **Major**
     - Added Gluo Premium.
