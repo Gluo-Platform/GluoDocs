@@ -1,5 +1,5 @@
 # Changelogs
-## Unreleased (December)
+## Unreleased
 
 - **Minor**
     - Added profile posts, use `@me` as the topic.
@@ -7,7 +7,7 @@
     - Fixed /topics/home not working.
     - Fixed a bug with posts appearing private.
 
-## December 19 2022
+## Dec 19 2022
 
 - **Major**
     - Added pagination to posts and comments in the hopes of speeding up the experience. 
@@ -20,7 +20,7 @@
     - Fixed broken popup on reaction sharing.
     - Fixed search command showing wrong results in some rare cases.
 
-## November 30 2022
+## Nov 30 2022
 
 - **Major**
     - Added Gluo Premium.
@@ -38,15 +38,15 @@
     - Fixed a bug with markdown.
     - Fixed a bug with linebreaks in aboutmes.
 
-## October 2022
+## Oct 00 2022
 
 - Things got added, fixed and patched, but we forgot to log it.
 
-## September 2022
+## Sep 00 2022
 
 - Things got added, fixed and patched, but we forgot to log it.
 
-## August 1 2022
+## Aug 01 2022
 
 - **Major**
     - Revamped the mobile UI to fit the PC design better.
@@ -59,7 +59,7 @@
     - Fixed an issue where topics wouldn't save.
     - Fixed the infinite scrolling bug that occured on PC.
 
-## July 26 2022
+## Jul 26 2022
 
 - **Major**
     - Added reactions.
@@ -69,7 +69,7 @@
 - **Minor**
     - Fixed some UI bugs.
 
-## July 24 2022
+## Jul 24 2022
 
 - **Major**
     - Added liking and post deleting.
@@ -81,7 +81,7 @@
     - Fixed one of the profile picture bugs.
     - Revamped the UI for followers and requests.
 
-## July 22 2022
+## Jul 22 2022
 
 - **Major**
     - Added post creating.
@@ -92,7 +92,7 @@
     - Revamped buttons and input fields. 
     - Revamped the topics settings and the appearance of posts.
 
-## July 20 2022
+## Jul 20 2022
 
 - **Major**
     - Fixed following, unfollowing and requesting.
@@ -100,19 +100,19 @@
 - **Minor**
     - Fixed a bug where you could follow yourself.
 
-## July 19 2022
+## Jul 19 2022
 
 - **Major**
     - Added the option to log out 😁.
 
-## July 06 2022
+## Jul 06 2022
 
 - **Major**
     - Added profile settings.
     - Added topic settings.
     - Added following.
 
-## July 05 2022
+## Jul 05 2022
 
 - **Major**
     - Added profiles and accounts.
