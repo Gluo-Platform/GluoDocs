@@ -105,18 +105,14 @@
 - **Major**
     - Added the option to log out 😁.
 
-## July 20 2022
-
-- **Major**
-    - Added following.
-
-## July 20 2022
+## July 06 2022
 
 - **Major**
     - Added profile settings.
     - Added topic settings.
+    - Added following.
 
-## July 20 2022
+## July 05 2022
 
 - **Major**
     - Added profiles and accounts.
