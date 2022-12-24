@@ -3,6 +3,7 @@
 
 - **Minor**
     - Added profile posts, use `@me` as the topic.
+    - Added embeds for gift links.
     - Fixed it so the previous buttons now continue at the bottom of the page.
     - Fixed /topics/home not working.
     - Fixed a bug with posts appearing private.
@@ -15,6 +16,8 @@
     - Revamped the way searching works.
 
 - **Minor**
+    - Revamped the homepage image.
+    - Fixed insane loading times.
     - Fixed styling on the legal pages.
     - Fixed a bug with reactions not having a character limit.
     - Fixed broken popup on reaction sharing.
@@ -26,12 +29,13 @@
     - Added Gluo Premium.
     - Added a search bar.
     - Revamped the website UI (looks less basic now).
-    - Fixed and sped up the webapp UI (looks the same).
 
 - **Minor**
     - Added captcha to signup.
     - Added tutorial for new users.
     - Added post embedding and anonymous post visiting.
+    - Revamped the way the UI loads stylings sheets.
+    - Revamped the code behind the UI to make is faster and smarter.
     - Fixed error with inactivated accounts.
     - Fixed reactions not working for private posts.
     - Fixed private posts not working in some rare cases.
