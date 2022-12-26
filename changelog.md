@@ -4,9 +4,12 @@
 - **Minor**
     - Added profile posts, use `@me` as the topic.
     - Added embeds for gift links.
+    - Removed /profile and /posts, they are now /user/{your-username} and /posts/{your-username}.
     - Fixed it so the previous buttons now continue at the bottom of the page.
     - Fixed /topics/home not working.
     - Fixed a bug with posts appearing private.
+    - Fixed the redirect in /premium not working.
+    - Fixed a bug were posts didn't appear on the profile.
 
 ## Dec 19 2022
 
