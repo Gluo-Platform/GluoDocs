@@ -1,5 +1,5 @@
 # Changelogs
-## Jan xx 2023
+## Jan 14 2023
 
 - **Major**
     - Added profile posts, use `@me` as the topic.
@@ -9,6 +9,7 @@
 - **Minor**
     - Added embeds for gift links.
     - Added home and logout buttons to the landing pages for people that are logged in.
+    - Revamped markdown, tagging and line breaks.
     - Fixed it so the previous buttons now continue at the bottom of the page.
     - Fixed /topics/home not working.
     - Fixed a bug with posts appearing private.
