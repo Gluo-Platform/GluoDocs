@@ -4,7 +4,7 @@
 |-------|--------|---------|
 | user_id  | int | Unique user ID |
 | username  | string | Unique username (1-25 characters) |
-| user_pfp  | string | Query for a user [profile picture](/docs/resources/users.md#get-a-profile-picture) |
+| user_pfp  | string | Query for a user [profile picture](/v3/resources/users.md#get-a-profile-picture) |
 | permissions  | integer | User [permissions](permissions.md#general-permissions) |
 | premium  | integer | User's [premium-level](permissions.md#premium-levels) |
 | status  | string | The user's status (1-75 characters) |
@@ -26,13 +26,13 @@ Example response
 |-------|--------|---------|
 | user_id  | int | Unique user ID |
 | username  | string | Unique username (1-25 characters) |
-| user_pfp  | string | Query for a user [profile picture](/docs/resources/users.md#get-a-profile-picture) |
+| user_pfp  | string | Query for a user [profile picture](/v3/resources/users.md#get-a-profile-picture) |
 | permissions  | integer | User [permissions](permissions.md#general-permissions) |
 | premium  | integer | User's [premium-level](permissions.md#premium-levels) |
 | status  | string | The user's status (1-75 characters) |
 | about  | string | The user's about-me (1-250 characters) |
 | private  | boolean | Is it a private account |
-| public_interactions  | boolean | Are their [followers](/docs/resources/users.md#getting-a-users-followers) and [following](/docs/resources/users.md#getting-the-people-a-user-follows) public |
+| public_interactions  | boolean | Are their [followers](/v3/resources/users.md#getting-a-users-followers) and [following](/v3/resources/users.md#getting-the-people-a-user-follows) public |
 | creation_date  | unix timestamp | The user's status (1-75 characters) |
 | followers  | integer | Amount of people that follow the user |
 | following  | integer | Amount of people the user follows |
@@ -69,7 +69,7 @@ A post always includes a [simple user](objects.md#simple-user-object) object.
 | description | string | Post description (1-1000 characters) |
 | topic  | string | Post topic (1-17 characters) |
 | type  | int | The post type |
-| attachment_name  | string | Returns an image name ([get image](/docs/resources/posts.md#get-a-post-attachment)) |
+| attachment_name  | string | Returns an image name ([get image](/v3/resources/posts.md#get-a-post-attachment)) |
 | upload_date | int | Unix timestamp of upload date |
 | likes | int | Amount of likes on the post |
 | liked | boolean | Did the requesting account like the post |

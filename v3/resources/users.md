@@ -3,11 +3,11 @@
 ### `GET` https://xxxxxxxxx/xxxx/xxxxxxxx/{user_query}
 You can search for users by their ID by adding `?id=true` at the end of the url.  
 To get your own account you can fill in the query as `@me`.  
-Returns a [user](/docs/core/objects.md#extensive-user-object) object if the provided `username` or `user_id` exists.
+Returns a [user](/v3/core/objects.md#extensive-user-object) object if the provided `username` or `user_id` exists.
 
 ## Get a profile picture
 ### `GET` https://media.gluo.xyz/pfp/{user_pfp}
-Provide the `user_pfp` field attached in a [simple user](/docs/core/objects.md#simple-user-object) or [extensive user](/docs/core/objects.md#extensive-user-object) object, get an image in return.
+Provide the `user_pfp` field attached in a [simple user](/v3/core/objects.md#simple-user-object) or [extensive user](/v3/core/objects.md#extensive-user-object) object, get an image in return.
 
 ## Getting a user's followers
 ### `GET` https://xxxxxxxxx/xxxxxxxxx/{user_id}
@@ -17,7 +17,7 @@ If `?object={x}` is not added to the url it will use the default object limit of
 Response:
 | field | type   | details |
 |-------|--------|---------|
-| users  | array | Returns an array of [simple user](/docs/core/objects.md#simple-user-object) objects |
+| users  | array | Returns an array of [simple user](/v3/core/objects.md#simple-user-object) objects |
 | next_page  | boolean | Returns if there is a next page | 
 
 ## Getting the people a user follows
@@ -28,5 +28,5 @@ If `?object={x}` is not added to the url it will use the default object limit of
 Response:
 | field | type   | details |
 |-------|--------|---------|
-| users  | array | Returns an array of [simple user](/docs/core/objects.md#simple-user-object) objects |
+| users  | array | Returns an array of [simple user](/v3/core/objects.md#simple-user-object) objects |
 | next_page  | boolean | Returns if there is a next page | 
