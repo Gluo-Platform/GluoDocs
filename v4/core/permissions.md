@@ -1,5 +1,7 @@
 # Permissions
-## General permissions 
+
+## General permissions
+
 | permission | value   |
 |-------|--------|
 | bot | 1 |
@@ -15,7 +17,8 @@
 | administrator  | 1024 |
 | team  | 2048 |
 
-## Premium permissions 
+## Premium permissions
+
 | permission | value   |
 |-------|--------|
 | animated_avatar | 2 |

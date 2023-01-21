@@ -1,5 +1,7 @@
 # Gluo objects
-### Large user object
+
+## Large user object
+
 | field | type   | details |
 |-------|--------|---------|
 | user_id  | int | Unique user ID |
@@ -15,9 +17,10 @@
 | is_following  | boolean | Is the account making the api call following the user |
 | is_requested  | boolean | Has the account making the api call requested to follow the user |
 | public_interactions  | boolean | Are their [followers](/v3/resources/users.md#getting-a-users-followers) and [following](/v3/resources/users.md#getting-the-people-a-user-follows) public |
-| creation_date  | unix timestamp | The user's status (1-75 characters) |
+| creation_timestamp  | unix timestamp | Unix timestamp of the creation date of the account |
 
 Example response
+
 ```json
 {
     "user_id": 5,
@@ -33,6 +36,6 @@ Example response
     "is_following": false,
     "is_requested": false,
     "public_interactions": false,
-    "creation_date": 1674061579
+    "creation_timestamp": 1674061579
 }
 ```
