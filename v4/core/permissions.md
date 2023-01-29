@@ -21,7 +21,11 @@
 
 | permission | value   |
 |-------|--------|
-| animated_avatar | 2 |
-| more_text | 4 |
-| more_topics | 8 |
-| more_upload | 16 |
+| enhanced_profiles | 2 |
+| enhanced_text | 4 |
+| enhanced_topics | 8 |
+| max_upload_20 | 16 |
+| max_upload_30 | 32 |
+| max_upload_40 | 64 |
+| max_upload_50 | 128 |
+| max_upload_100 | 256 |
