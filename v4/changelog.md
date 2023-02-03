@@ -1,5 +1,10 @@
 # Changelog
 
+## Feb 03 2023
+
+- **Major**
+  - Started on post editing
+
 ## Jan 29 2023
 
 - **Major**

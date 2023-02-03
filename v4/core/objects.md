@@ -67,7 +67,7 @@ Example response
 | user  | small_user_object | A [small user object](/v4/core/objects.md#small-user-object) |
 | post_id | int | Unique post ID |
 | title | string | Post title (1-50 characters) |
-| description | string | Post description (1 - 1000) characters |
+| description | string | Post description (1 - 1000) characters. Could be null. |
 | topics | array | Array of topics |
 | post_type | string | Either `"TEXT"`, `"IMAGE"` (for static and dynamic images) or `"VIDEO"`. |
 | attachment_name | string | Unique attachment name |

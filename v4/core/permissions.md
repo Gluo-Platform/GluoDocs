@@ -2,8 +2,8 @@
 
 ## General permissions
 
-| permission | value   |
-|-------|--------|
+| permission | value |
+|------------|-------|
 | bot | 1 |
 | verified_bot | 2 |
 | developer | 4 |
@@ -11,7 +11,7 @@
 | premium | 16 |
 | early_supporter | 32 |
 | user | 64 |
-| verified_user | 128 | 
+| verified_user | 128 |
 | tester  | 256 |
 | moderator | 512 |
 | administrator  | 1024 |
@@ -19,8 +19,8 @@
 
 ## Premium permissions
 
-| permission | value   |
-|-------|--------|
+| permission | value |
+|------------|-------|
 | enhanced_profiles | 2 |
 | enhanced_text | 4 |
 | enhanced_topics | 8 |
