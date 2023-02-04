@@ -4,6 +4,8 @@
 
 - **Major**
   - Added post editing
+  - Added post deleting
+  - Added random and trending topics
 
 ## Jan 29 2023
 
