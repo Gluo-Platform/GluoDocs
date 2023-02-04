@@ -1,9 +1,9 @@
 # Changelog
 
-## Feb 03 2023
+## Feb 04 2023
 
 - **Major**
-  - Started on post editing
+  - Added post editing
 
 ## Jan 29 2023
 
