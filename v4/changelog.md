@@ -3,6 +3,8 @@
 ## Feb 05 2023
 
 - **Major**
+  - Added post liking
+  - Added reaction liking
   - Added reaction creating
   - Added reaction editing
   - Added `get_reaction()`
