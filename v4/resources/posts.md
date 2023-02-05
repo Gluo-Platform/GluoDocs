@@ -1,6 +1,6 @@
 # Gluo Posts
 
-## Creating posts
+## Create a post
 
 ### `POST` /post/create
 

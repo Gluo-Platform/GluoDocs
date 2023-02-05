@@ -95,3 +95,33 @@ Example response
     "creation_timestamp": 1674656446
 }
 ```
+
+## Reaction object
+
+| field | type | details |
+|-------|------|---------|
+| user | small_user_object | A [small user object](/v4/core/objects.md#small-user-object) |
+| post_id | int | Unique post ID |
+| reaction_id | int | Unique reaction ID |
+| description | string | Reaction description (1-500 characters) |
+| likes | int | Amount of likes |
+| has_liked | boolean | Has the requesting user liked this reaction |
+| creation_timestamp | int | Timestamp op reaction creation date |
+
+```json
+{
+    "user": {
+        "user_id": 5,
+        "username": "kipteam",
+        "permissions": 64,
+        "avatar": "default.png",
+        "status": "Hi, I am a Gluo user!"
+    },
+    "post_id": 7,
+    "reaction_id": 1,
+    "description": "very cool reaction",
+    "likes": 0,
+    "has_liked": false,
+    "creation_timestamp": 1675610927.9662814
+}
+```

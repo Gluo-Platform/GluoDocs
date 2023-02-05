@@ -10,4 +10,4 @@ Returns a list of random topics:
 
 ### `GET` /topics/trending
 
-Returns the trending topics of that day
+Returns the trending topics of that day.

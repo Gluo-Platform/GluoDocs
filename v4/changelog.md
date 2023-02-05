@@ -1,5 +1,12 @@
 # Changelog
 
+## Feb 05 2023
+
+- **Major**
+  - Added reaction creating
+  - Added reaction editing
+  - Added `get_reaction()`
+
 ## Feb 04 2023
 
 - **Major**
