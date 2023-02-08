@@ -1,6 +1,6 @@
 # Gluo users
 
-## Get a user 
+## Get a user
 
 ### `GET` /user/{user_query}
 

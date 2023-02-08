@@ -1,5 +1,15 @@
 # Changelog
 
+## Feb 07 2023
+
+- **Major**
+  - Added followers
+  - Added following
+  - Added blocking and unblocking
+  - Added following and unfollowing
+  - Added requesting, accepting and rejecting
+  - Added online list
+
 ## Feb 05 2023
 
 - **Major**
