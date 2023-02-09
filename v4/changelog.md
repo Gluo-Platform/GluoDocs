@@ -1,6 +1,11 @@
 # Changelog
 
-## Feb 07 2023
+## Feb 09 2023
+
+- **Major**
+  - Added option to set user-topics
+
+## Feb 08 2023
 
 - **Major**
   - Added followers
