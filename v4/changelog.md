@@ -1,5 +1,17 @@
 # Changelog
 
+## Mar 11 2023
+
+- **Major**
+  - Added account deletion
+  - Added account preferences (basic stuff, more settings will be added)
+
+- **Minor**
+  - Revamped some authentication functions
+  - Fixed wrong type preview in some errors
+  - Fixed logging in with inactive account
+  - Fixed weird bug when trying to activate an active account
+
 ## Feb 09 2023
 
 - **Major**
