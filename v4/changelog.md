@@ -1,5 +1,15 @@
 # Changelog
 
+## Mar 18 2023
+
+- **Minor**
+  - Added reaction counter to post model
+
+- **Patch**
+  - Fixed post liking
+  - Fixed weird integer-type checking issue
+  - Fixed post_topics not working
+
 ## Mar 11 2023
 
 - **Major**
