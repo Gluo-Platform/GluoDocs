@@ -1,4 +1,91 @@
-# Changelogs
+# Changelog
+
+## Mar 20 2023
+
+- **Minor**
+  - Added 'topics' field to users.
+
+- **Patch**
+  - Fixed an issue in `settings.py`.
+  - Fixed a wrong error message when getting posts.
+  - Fixed a wrong object name for reactions in post_serializer.
+  - Fixed throttling for authentication function.
+
+## Mar 18 2023
+
+- **Minor**
+  - Added reaction counter to the post model.
+
+- **Patch**
+  - Fixed post liking
+  - Fixed weird integer-type checking issue
+  - Fixed post_topics not working
+
+## Mar 11 2023
+
+- **Major**
+  - Added the option to delete an account.
+  - Added `public_interactions` to the preference settings.
+
+- **Patch**
+  - Revamped some authentication functions.
+  - Fixed wrong type preview in some errors.
+  - Fixed logging in with inactive accounts.
+  - Fixed weird bug when trying to activate an active account.
+
+## Feb 09 2023
+
+- **Major**
+  - Added the option to set user-topics.
+
+## Feb 08 2023
+
+- **Major**
+  - Added a list of followers.
+  - Added a list of following.
+  - Added the option to block and unblock.
+  - Added the option to follow and unfollow.
+  - Added the option to request a follow (private accounts only).
+  - Added the option to accept and reject a follow (private accounts only).
+  - Added the online list.
+
+## Feb 05 2023
+
+- **Major**
+  - Added the option to like posts.
+  - Added reaction creating.
+  - Added the option to like reactions.
+  - Added the option to get reactions under a post.
+  - Added the option to get a specific reaction
+
+## Feb 04 2023
+
+- **Major**
+  - Added the option to edit a post.
+  - Added the option to delete a post.
+  - Added the option to get random and trending topics.
+
+## Jan 29 2023
+
+- **Major**
+  - Added post creating.
+  - Added topic posts and following posts.
+  - Added the option to get a specific post.
+  - Added posts by a user.
+
+- **Patch**
+  - Revamped `request_handler.py` to be kinder on the eye.
+
+## Jan 21 2023
+
+- **Major**
+  - Added registration for users.
+  - Added logging in for users.
+  - Added the option to change your password.
+  - Added the option to change your email.
+
+**DISCLAIMER**
+The changelogs given below are for Gluo `v3`, the ones provided above are for Gluo `v4`.
 
 ## Jan 14 2023
 
@@ -56,11 +143,11 @@
 
 ## Oct 00 2022
 
-- Things got added, fixed and patched, but we forgot to log it.
+- Things got added, fixed and Patched, but we forgot to log it.
 
 ## Sep 00 2022
 
-- Things got added, fixed and patched, but we forgot to log it.
+- Things got added, fixed and Patched, but we forgot to log it.
 
 ## Aug 01 2022
 
