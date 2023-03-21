@@ -4,7 +4,7 @@
 
 ### `GET` /user/{user_query}
 
-Search for a user by the provided `user_query`. If you are looking for a user by ID, append `?id=true` to the end (`/user/{user_id}?id=true`).  
+Search for a user by the provided `user_query` (should be a `user_id`). If you are looking for a user by username, append `?username=true` to the end (`/user/{username}?username=true`).  
 If you are looking for more information on yourself, pass along your user token and use `@me` as `user_query` (`/user/@me`).  
 
 Returns a [large user object](/v4/core/objects.md#large-user-object)

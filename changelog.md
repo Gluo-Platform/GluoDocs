@@ -4,6 +4,8 @@
 
 - **Minor**
   - Added 'topics' field to users.
+  - Changed `/users/{query}` to `/user/{query}`.
+  - Changed `/user/{query}` to default a `user_id` instead of a `username`.
 
 - **Patch**
   - Fixed an issue in `settings.py`.
