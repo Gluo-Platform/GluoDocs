@@ -1,5 +1,17 @@
 # Changelog
 
+## Mar 21 2023
+
+- **Minor**
+  - Added `highest_permission()` function to the permission handler.
+  - Added `is_valid_permission_collection` to permission handler.
+  - Added promoting (mostly for testing not finalised)
+
+- **Patch**
+  - Fixed `@me` when getting user.
+  - Fixed wrong `user` object when getting topics in `user_serializer`.
+  - Fixed turning `visited_user.topics` into a list and not an object.
+
 ## Mar 20 2023
 
 - **Minor**
@@ -112,7 +124,7 @@ The changelogs given below are for Gluo `v3`, the ones provided above are for Gl
 ## Dec 19 2022
 
 - **Major**
-  - Added pagination to posts and comments in the hopes of speeding up the experience. 
+  - Added pagination to posts and comments in the hopes of speeding up the experience.
   - Added a "keep me logged in" button.
   - Revamped the way searching works.
 
@@ -191,10 +203,10 @@ The changelogs given below are for Gluo `v3`, the ones provided above are for Gl
 - **Major**
   - Added post creating.
   - Added the option to view your and others their posts.
-  - Added requesting for private accounts. 
+  - Added requesting for private accounts.
 
 - **Minor**
-  - Revamped buttons and input fields. 
+  - Revamped buttons and input fields.
   - Revamped the topics settings and the appearance of posts.
 
 ## Jul 20 2022
@@ -223,4 +235,4 @@ The changelogs given below are for Gluo `v3`, the ones provided above are for Gl
   - Added profiles and accounts.
 
 **DISCLAIMER**
-A lot happened before and during all these changelogs that got unregistered or just was irrelevant. The changelog shown here is the third iteration of Gluo and also the one that is currently publicly in use. 
+A lot happened before and during all these changelogs that got unregistered or just was irrelevant. The changelog shown here is the third iteration of Gluo and also the one that is currently publicly in use.
