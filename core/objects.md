@@ -73,6 +73,8 @@ Example response
 | attachment_name | string | Unique attachment name |
 | likes | int | Amount of likes |
 | has_liked | boolean | Has the requesting user liked this post |
+| reactions | int | Amount of reactions under a post |
+| has_saved | boolean | Has the requesting user saved this post |
 | creation_timestamp | int | Timestamp of post creation date |
 
 ```json
@@ -92,6 +94,8 @@ Example response
     "attachment_name": null,
     "likes": 0,
     "has_liked": false,
+    "reactions" : 0,
+    "has_saved" : false,
     "creation_timestamp": 1674656446
 }
 ```

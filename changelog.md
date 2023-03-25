@@ -1,5 +1,19 @@
 # Changelog
 
+## Mar 25 2023
+
+- **Minor**
+  - Added the option so save a post.
+  - Added a way to get saved posts.
+  - Added `has_saved` property to post object.
+  - Added the option to archive a post.
+  - Added the option to get archived posts.
+
+- **Patch**
+  - Fixed type checking for GluoIDs.
+  - Fixed issue with a wrong model reference in `saved_posts()`.
+  - Fixed the url of saved posts linking to `get_posts()`.
+
 ## Mar 21 2023
 
 - **Minor**
