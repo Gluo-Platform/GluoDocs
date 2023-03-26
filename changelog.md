@@ -15,6 +15,7 @@
   - Added pending cases.
   - Added verified cases.
   - Added option to get specific cases.
+  - Added follow and request notifications.
 
 - **Minor**
   - Changed post objects to provide large user objects.
@@ -31,6 +32,7 @@
   - Fixed urls for moderation
   - Fixed function name in moderation serializer
   - Fixed issue with report models
+  - Fixed user object in post objects.
 
 ## Mar 25 2023
 
