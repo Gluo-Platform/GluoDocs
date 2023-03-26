@@ -64,7 +64,7 @@ Example response
 
 | field | type | details |
 |-------|------|---------|
-| user | small_user_object | A [small user object](/v4/core/objects.md#small-user-object) |
+| user | small_user_object | A [small user object](/v4/core/objects.md#large-user-object) |
 | post_id | int | Unique post ID |
 | title | string | Post title (1-50 characters) |
 | description | string | Post description (1 - 1000) characters. Could be null. |
@@ -84,7 +84,16 @@ Example response
         "username": "kipteam",
         "permissions": 64,
         "avatar": "default.png",
-        "status": "Hi, I am a Gluo user!"
+        "status": "Hi, I am a Gluo user!",
+        "about": "Another awesome Gluo user.",
+        "following": 0,
+        "followers": 0,
+        "posts": 0,
+        "private": false,
+        "is_following": false,
+        "is_requested": false,
+        "public_interactions": false,
+        "creation_timestamp": 1674061579
     },
     "post_id": 6,
     "title": "test post",

@@ -1,5 +1,20 @@
 # Changelog
 
+## Mar 26 2023
+
+- **Minor**
+  - Added a way to get notifications.
+  - Added a way to read a notification.
+  - Added a way to delete a notification.
+  - Added a welcome notification for new users.
+  - Changed post objects to provide large user objects.
+
+- **Patch**
+  - Fixed the error message for invalid passwords.
+  - Fixed a small issue with random topics.
+  - Fixed a small issue with trending topics.
+  - Fixed weird bug when retreiving notifications.
+
 ## Mar 25 2023
 
 - **Minor**
