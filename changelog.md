@@ -2,11 +2,21 @@
 
 ## Mar 26 2023
 
-- **Minor**
+- **Major**
   - Added a way to get notifications.
   - Added a way to read a notification.
   - Added a way to delete a notification.
   - Added a welcome notification for new users.
+  - Added user reporting.
+  - Added post reporting.
+  - Added reaction reporting.
+  - Added unclaimed cases.
+  - Added claimed cases.
+  - Added pending cases.
+  - Added verified cases.
+  - Added option to get specific cases.
+
+- **Minor**
   - Changed post objects to provide large user objects.
 
 - **Patch**
@@ -14,6 +24,13 @@
   - Fixed a small issue with random topics.
   - Fixed a small issue with trending topics.
   - Fixed weird bug when retreiving notifications.
+  - Fixed checking for an archived property on reactions.
+  - Fixed urls for user-relation related endpoints.
+  - Fixed related names on case objects.
+  - Fixed urls for moderation.
+  - Fixed urls for moderation
+  - Fixed function name in moderation serializer
+  - Fixed issue with report models
 
 ## Mar 25 2023
 
