@@ -1,5 +1,35 @@
 # Changelog
 
+## Mar 28 2023
+
+- **Major**
+  - Added the option to save attachments.
+  - Added an endpoint to get user avatars.
+  - Added an endpoint to get attachments.
+  - Added option to refure a case.
+  - Added moderation profiles.
+
+- **Patch**
+  - Fixed a bug with the notification serializer.
+  - Fixed a bug with status codes for attachments being wrong.
+  - Fixed a bug with checking for file types.
+
+## Mar 27 2023
+
+- **Major**
+  - Added the option to claim a case.
+  - Added the option to unclaim a case.
+  - Added the option to file a case.
+  - Added the option to verify a case.
+
+- **Minor**
+  - Changed url paths for getting cases.
+
+- **Patch**
+  - Fixed an error when a notification doesn't exist.
+  - Fixed wrong names in moderation throttles.
+  - Fixed forgetting no timestamps on notifications.
+
 ## Mar 26 2023
 
 - **Major**
@@ -7,15 +37,15 @@
   - Added a way to read a notification.
   - Added a way to delete a notification.
   - Added a welcome notification for new users.
-  - Added user reporting.
-  - Added post reporting.
-  - Added reaction reporting.
-  - Added unclaimed cases.
-  - Added claimed cases.
-  - Added pending cases.
-  - Added verified cases.
-  - Added option to get specific cases.
-  - Added follow and request notifications.
+  - Added the option to report a user.
+  - Added the option to report a post.
+  - Added the option to report a reaction.
+  - Added a way to get unclaimed cases.
+  - Added a way to get claimed cases.
+  - Added a way to get pending cases.
+  - Added a way to get verified cases.
+  - Added the option to get a specific case.
+  - Added a follow and request notifications.
 
 - **Minor**
   - Changed post objects to provide large user objects.
