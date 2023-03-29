@@ -1,5 +1,18 @@
 # Changelog
 
+## Mar 29 2023
+
+- **Major**
+  - Added entity deletion as a moderation action.
+
+- **Minor**
+  - Added entity disappearance when it has too many reports.
+
+- **Patch**
+  - Fixed an issue with file types in attachments.
+  - Fixed an issue with file names in attachments.
+  - Fixed an issue where the post field on a user model counted invalid posts (archived/disabled).
+
 ## Mar 28 2023
 
 - **Major**
