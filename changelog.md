@@ -1,5 +1,17 @@
 # Changelog
 
+## Mar 30 2023
+
+- **Major**
+  - Added an endpoint to search through users, posts and topics.
+  - Added an endpoint to get your list of blocked users.
+  - Added a usage count to the topic fields.
+
+- **Minor**
+  - Added blocked field to the user object.
+  - Changed the way blocking people works.
+  - Changed the way trending and random topics work.
+
 ## Mar 29 2023
 
 - **Major**
