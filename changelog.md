@@ -11,6 +11,15 @@
   - Added blocked field to the user object.
   - Changed the way blocking people works.
   - Changed the way trending and random topics work.
+  - Changed the topic-settings return object to return a user object.
+  - Added file types to post objects.
+  - Added visiting user to the reaction object.
+
+- **Patch**
+  - Fixed an issue with topic serialisation.
+  - Fixed an issue with topic fields.
+  - Fixed a bug with the post object when creating a new post.
+  - Fixed a bug with status codes in post creation.
 
 ## Mar 29 2023
 
