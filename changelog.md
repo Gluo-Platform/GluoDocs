@@ -1,5 +1,16 @@
 # Changelog
 
+## Mar 31 2023
+
+- **Minor**
+  - Added avatar deletion when you change your avatar.
+  - Added attachment deletion when a post gets deleted.
+
+- **Patch**
+  - Fixed a bug with user-topic fields.
+  - Fixed a bug where video and audio attachments wouldn't get saved.
+  - Fixed a bug with a field name issue in `update_topics()`.
+
 ## Mar 30 2023
 
 - **Major**
@@ -17,7 +28,6 @@
 
 - **Patch**
   - Fixed an issue with topic serialisation.
-  - Fixed an issue with topic fields.
   - Fixed a bug with the post object when creating a new post.
   - Fixed a bug with status codes in post creation.
 

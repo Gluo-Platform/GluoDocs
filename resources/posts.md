@@ -63,5 +63,5 @@ By default `page_number` is 1. `object_count` is 10.
 Returns a list of [post objects](/v4/core/objects.md#post-object) posted by the provided user.  
 
 Makes use of pagination:
-`/posts/{topic}?page={page_number}&object_count={object_count}`  
+`/user/{user_id}/posts?page={page_number}&object_count={object_count}`  
 By default `page_number` is 1. `object_count` is 10.
