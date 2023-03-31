@@ -10,6 +10,9 @@
   - Fixed a bug with user-topic fields.
   - Fixed a bug where video and audio attachments wouldn't get saved.
   - Fixed a bug with a field name issue in `update_topics()`.
+  - Fixed a bug with an invalid status code for the login endpoint.
+  - Fixed an issue with setting random user topics upon activation.
+  - Fixed an issue with random topics.
 
 ## Mar 30 2023
 
