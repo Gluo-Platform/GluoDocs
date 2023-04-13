@@ -1,5 +1,42 @@
 # Changelog
 
+## Apr 13 2023
+
+- **Major**
+  - Added user statistics
+  - Added post statistics
+  - Added reaction statistics
+  - Added moderation statistics
+
+- **Patch**
+  - Fixed wrong ID reference in user reactions endpoint.
+
+## Apr 12 2023
+
+- **Major**
+  - Added user reactions
+
+- **Patch**
+  - Fixed delete reaction not returning error when reaction not found
+
+## Apr 06 2023
+
+- **Minor**
+  - Changed the random topics endpoint.
+  - Changed the trending topics endpoint (`/topics/trending` -> `/topics/popular`).
+  - Changed the the preference settings to return a user object.
+  - Added a popular user-topics endpoint.
+  - Added a statistics endpoint.
+  - Added the option to change your private `private` setting.
+
+- **Patch**
+  - Fixed random image rotations.
+  - Fixed an issue where a wrong field was referenced in the topic object array function.
+  - Fixed an issue with `public_interactions` in preference settings.
+  - Fixed an issue where profile settings had the wrong status codes.
+  - Fixed an issue where there was no url for the preference settings.
+
+
 ## Mar 31 2023
 
 - **Minor**
