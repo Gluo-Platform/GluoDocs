@@ -31,8 +31,12 @@ Returns the updated [reaction object](/v4/core/objects.md#reaction-object) upon 
 
 Returns a [reaction object](/v4/core/objects.md#reaction-object) when a valid `reaction_id` is provided.
 
-## Get
+## Get all reactions under a post
 
 ### `GET` /post/{post_id}/reactions
 
 Returns an array of [reaction objects](/v4/core/objects.md#reaction-object) when a valid `post_id` is provided.
+
+## Delete a reaction
+
+### `DELETE`

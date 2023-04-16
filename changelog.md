@@ -1,5 +1,35 @@
 # Changelog
 
+## Apr 16 2023
+
+- **Patch**
+  - Fixed some issues that occured with statistics.
+  - Fixed an issue with associated users in notifications.
+  - Fixed an issue with a wrong method in `like_reaction()`.
+  - Fixed some issues with error messages in `activate()`
+  - Fixed an issue with a wrong field reference when updating topics.
+
+## Apr 15 2023
+
+- **Major**
+  - Added general and topic statistic endpoints.
+
+- **Minor**
+  - Added invisible mode to user object
+  - Added associated users to notifications
+
+- **Patch**
+  - Fixed an issue with the topic statistic gathering.
+  - Fixed issue with datetime object in functions
+
+## Apr 14 2023
+
+- **Major**
+  - Added an invisible mode.
+
+- **Patch**
+  - Fixed an issue where reactions were not filtered by creation date.
+
 ## Apr 13 2023
 
 - **Major**
