@@ -25,6 +25,12 @@ JSON Parameters required:
 The original reaction will be updated and get it's value changed.  
 Returns the updated [reaction object](/v4/core/objects.md#reaction-object) upon successfull editing.
 
+## Delete a reaction
+
+### `DELETE` /reaction/{reaction_id}/delete
+
+Delete a reaction permanently. The requesting authorization-token must be linked to the owning user. Returns `204 No Content` on success.
+
 ## Get a reaction
 
 ### `GET` /reaction/{reaction_id}
@@ -37,6 +43,8 @@ Returns a [reaction object](/v4/core/objects.md#reaction-object) when a valid `r
 
 Returns an array of [reaction objects](/v4/core/objects.md#reaction-object) when a valid `post_id` is provided.
 
-## Delete a reaction
+## Get all reactions by a user
 
-### `DELETE`
+### `GET` /user/{user_id}/reactions
+
+Returns an array of [reaction objects](/v4/core/objects.md#reaction-object) when a valid `user_id` is provided.
