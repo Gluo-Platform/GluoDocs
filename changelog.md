@@ -1,5 +1,13 @@
 # Changelog
 
+## Apr 20 2023
+
+- **Major**
+  - Created group and user objects
+
+- **Patch**
+  - Fixed topic statistics (final time I hope)
+
 ## Apr 16 2023
 
 - **Patch**
