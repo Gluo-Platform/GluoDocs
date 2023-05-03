@@ -1,5 +1,35 @@
 # Changelog
 
+## May 03 2023
+
+- **Major**
+  - Added an endpoint to create groups.
+  - Added a group permission handler.
+
+## Apr 30 2023
+
+- **Minor**
+  - Added overview fields to general statistics.
+
+- **Patch**
+  - Fixed an issue with statistics.
+  - Fixed an issue with topic serializers.
+
+## Apr 25 2023
+
+- **Patch**
+  - Fixed an issue with a wrong topic reference in `create_post()`.
+  - Fixed an issue with the absence of a date field in topic statistics.
+
+## Apr 23 2023
+
+- **Major**
+  - Added an endpoint to get a group.
+
+- **Patch**
+  - Fixed an issue where archived and saved posts weren't ordered by creation date.
+  - Fixed an issue with associated users when creating a notification in user-relations.  
+
 ## Apr 20 2023
 
 - **Major**
