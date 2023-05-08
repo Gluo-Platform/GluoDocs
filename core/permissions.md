@@ -17,6 +17,18 @@
 | administrator  | 1024 |
 | team  | 2048 |
 
+## Group permissions
+
+| permission | value |
+|------------|-------|
+| bot | 1 |
+| member | 2 |
+| mute | 4 |
+| kick | 8 |
+| ban | 16 |
+| administrator | 32 |
+| owner | 64 |
+
 ## Premium permissions
 
 | permission | value |

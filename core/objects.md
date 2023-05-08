@@ -138,3 +138,11 @@ Example response
     "creation_timestamp": 1675610927.9662814
 }
 ```
+
+## Group object
+
+YET TO BE DEFINED.
+
+## Member object
+
+YET TO BE DEFINED.

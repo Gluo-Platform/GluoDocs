@@ -1,5 +1,18 @@
 # Changelog
 
+## May 08 2023
+
+- **Major**
+  - Added an endpoint to get all groups a user is member of.
+  - Added an endpoint to leave a group.
+
+## May 04 2023
+
+- **Major**
+  - Added an endpoint to delete a group.
+  - Added inactive user removal.
+  - Added an endpoint to join a group.
+
 ## May 03 2023
 
 - **Major**
