@@ -1,5 +1,11 @@
 # Changelog
 
+## May 10 2023
+
+- **Major**
+  - Added an endpoint to get all members of a group.
+  - Added an endpoint to get a specific member of a group.
+
 ## May 08 2023
 
 - **Major**
