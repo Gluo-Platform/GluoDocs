@@ -13,9 +13,12 @@
 | followers | integer | Amount of people that follow the user |
 | following | integer | Amount of people the user follows |
 | posts | integer | Amount of posts by the user |
-| private | boolean | Is it a private account |
 | is_following | boolean | Is the account making the api call following the user |
 | is_requested | boolean | Has the account making the api call requested to follow the user |
+| is_blocked | boolean | Is the account making the api call blocked by the user |
+| private | boolean | Is it a private account |
+| invisible | boolean | Is the user in invisible mode |
+| online | boolean | Is the user currently online (only works when the user is not in invisible)|
 | public_interactions | boolean | Are their [followers](/v3/resources/users.md#getting-a-users-followers) and [following](/v3/resources/users.md#getting-the-people-a-user-follows) public |
 | creation_timestamp | unix timestamp | Unix timestamp of the creation date of the account |
 
@@ -32,9 +35,12 @@ Example response
     "following": 0,
     "followers": 0,
     "posts": 0,
-    "private": false,
     "is_following": false,
     "is_requested": false,
+    "is_blocked": false,
+    "private": false,
+    "invisible": false,
+    "online": true,
     "public_interactions": false,
     "creation_timestamp": 1674061579
 }
