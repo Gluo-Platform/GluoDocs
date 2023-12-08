@@ -4,40 +4,31 @@
 
 | permission | value |
 |------------|-------|
-| bot | 1 |
-| verified_bot | 2 |
-| developer | 4 |
-| verified_developer | 8 |
-| premium | 16 |
-| early_supporter | 32 |
-| user | 64 |
-| verified_user | 128 |
-| tester  | 256 |
-| moderator | 512 |
-| administrator  | 1024 |
-| team  | 2048 |
+| create_content | 1 |
+| manage_account | 2 |
+| developer_tools | 4 |
+| partner_tools | 8 |
+| verified_account | 16 |
+| feature_previews | 32 |
+| manage_reports | 64 |
+| manage_cases | 128 |
+| manage_permissions  | 256 |
+| enhanced_content | 512 |
+| enhanced_profile  | 1024 |
+| default_upload_size  | 2048 |
+| small_upload_size  | 2048 |
+| medium_upload_size  | 4096 |
+| large_upload_size  | 8192 |
+| manage_users  | 16384 |
 
 ## Group permissions
 
 | permission | value |
 |------------|-------|
-| bot | 1 |
-| member | 2 |
-| mute | 4 |
+| muted | 1 |
+| bot | 2 |
+| member | 4 |
 | kick | 8 |
 | ban | 16 |
 | administrator | 32 |
 | owner | 64 |
-
-## Premium permissions
-
-| permission | value |
-|------------|-------|
-| enhanced_profiles | 2 |
-| enhanced_text | 4 |
-| enhanced_topics | 8 |
-| max_upload_20 | 16 |
-| max_upload_30 | 32 |
-| max_upload_40 | 64 |
-| max_upload_50 | 128 |
-| max_upload_100 | 256 |
