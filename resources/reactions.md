@@ -19,7 +19,7 @@ Returns a [reaction object](/v4/core/objects.md#reaction-object) upon successful
 JSON Parameters required:
 | field | type | nullable | details |
 |-------|------|----------|---------|
-| reaction_id | int | false | The reaction you want to edit |
+| reaction_id | int | false | The reaction to be edited |
 | description | string | false | The description of the post |
 
 The original reaction will be updated and get it's value changed.  
