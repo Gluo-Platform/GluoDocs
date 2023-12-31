@@ -5,7 +5,7 @@
 | permission | value | group permission |
 |------------|-------|------------------|
 | create_content | 1 | true |
-| manage_account | 2 | false |
+| manage_account | 2 | true |
 | developer_tools | 4 | false |
 | partner_tools | 8 | false |
 | verified_account | 16 | false |
