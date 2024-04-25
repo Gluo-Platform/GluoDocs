@@ -1,11 +1,5 @@
 # Gluo Posts
 
-## Delete a specific post
-
-### `DELETE` /post/{post_id}/delete
-
-Delete a post permanently. The requesting authorization-token must be linked to the owning user. Returns `204 No Content` on success.
-
 ## Get a specific post
 
 ### `GET` /post/{post_id}
