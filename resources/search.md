@@ -8,11 +8,11 @@ Optional query parameters:
 | field | type | nullable | details |
 |-------|------|----------|---------|
 | user | bool | true | Should it look for only users |
-| exact_user | bool | true | Should it look for only users |
+| exact_user | bool | true | Should it look for only users that match the query exactly |
 | post | bool | true | Should it look for only posts |
-| exact_post | bool | true | Should it look for only posts |
+| exact_post | bool | true | Should it look for only posts that match the query exactly |
 | topic | bool | true | Should it look for only topics |
-| exact_topic | bool | true | Should it look for only topics |
+| exact_topic | bool | true | Should it look for topics that match the query exactly |
 
 You can add any of the above and have them stack to limit your results to anything you want.  
 Examples:
