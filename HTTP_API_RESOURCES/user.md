@@ -19,7 +19,7 @@ Not all information about a user is accessible to everyone. Certain fields are l
 | id | snowflake | Unique user ID | ALL |
 | username | string | Unique username (1-25 characters) | ALL |
 | avatar | [MediaObject]() | The user's avatar | ALL |
-| banner | [BannerObject]() | The user's banner | LARGE |
+| banner | [BannerObject](#bannerobject) | The user's banner | LARGE |
 | permissions | integer | User [permissions](permissions.md#general-permissions) | ALL |
 | status | string | The user's status | ALL |
 | about | string | The user's about-me | LARGE |
@@ -33,6 +33,13 @@ Not all information about a user is accessible to everyone. Certain fields are l
 ```json
 {"TODO": "exmaple user"}
 ```
+
+
+## BannerObject
+| field | type | description |
+|-------|------|-------------|
+| type | "hex" \| "media" | Type of the banner |
+| value | string \| [MediaObject]() | Hexcode or banner media object |
 
 
 ## Get current user

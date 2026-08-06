@@ -1,8 +1,9 @@
 # Gluo API Reference
 
-Official developer API documentation for the Gluo API. This contains endpoints 
-that are limited to Users and innaccessible to external API usecases. All 
-generally available endpoints are listed [here]().
+Official developer API documentation for the Gluo API. Alongside query-able 
+endpoints, this reference also contains endpoints that are limited to Users 
+or limited to internal use only. All generally available endpoints are listed
+[here](./general_endpoints.md).
 
 **Base url**
 ```shell
@@ -60,6 +61,19 @@ Authorization: Bearer 89f4865eb59c0aba22fc9f9b9b75fc5218a1f502b3835a4ce26cc39ab5
 ```shell
 Authorization: Bot 89f4865eb59c0aba22fc9f9b9b75fc5218a1f502b3835a4ce26cc39ab50f351c92d3ac882eb4594856ea4c7f7e4620ef0fb94ea06ac892633d5cef1630e24766
 ```
+
+
+## Nullable and Optional Resource fields
+
+This API will describe returned objects and request bodies. These are 
+represented by tables of fields using the expected name. Some fields are 
+optional or nullable. The used syntax for the documentation is as follows
+| Field | Type | Description |
+|-------|------|-------------|
+| field | string | Required string field |
+| field? | string | Optional string field |
+| field | string? | Nullable string field |
+| field? | string? | Optional and nullable string field |
 
 
 ## HTTP API

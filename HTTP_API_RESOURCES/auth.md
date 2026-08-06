@@ -9,9 +9,6 @@ All related to the authentication of ["Regular"](user.md#user) users.
 **`POST`** `/auth/register`
 {% endhint %}
 
-**This is a private endpoint that cannot be used by any client.** Documented for 
-documentation purposes only.
-
 Will create a new user object and send them a email-verification message. Will
 return a success message.
 
@@ -31,8 +28,7 @@ return a success message.
 **`POST`** `/auth/activate`
 {% endhint %}
 
-**This is a private endpoint that cannot be used by any client.** Documented for 
-documentation purposes only.
+Active a newly created user account with a token sent per email.
 
 **JSON Parameters**
 | field | type | description |
@@ -40,14 +36,11 @@ documentation purposes only.
 | token | string(86:256) | Authentication token sent to the user over email |
 
 
-## Resent activation email
+## Resend activation email
 
 {% hint style="info" %}
 **`POST`** `/auth/email/resend`
 {% endhint %}
-
-**This is a private endpoint that cannot be used by any client.** Documented for 
-documentation purposes only.
 
 Will resend the activation email. _TODO: figure out spam prevention, API or frontend-server_
 
@@ -63,9 +56,6 @@ Will resend the activation email. _TODO: figure out spam prevention, API or fron
 **`POST`** `/auth/password/reset`
 {% endhint %}
 
-**This is a private endpoint that cannot be used by any client.** Documented for 
-documentation purposes only.
-
 Will send a reset password email to the user. Endpoint falls under [strict]() ratelimits under the assumption that you cannot forget a password you just changed 🙏.
 
 **JSON Parameters**
@@ -80,10 +70,7 @@ Will send a reset password email to the user. Endpoint falls under [strict]() ra
 **`POST`** `/auth/password/reset`
 {% endhint %}
 
-**This is a private endpoint that cannot be used by any client.** Documented for 
-documentation purposes only.
-
-Will send a reset password email to the user. Endpoint falls under [strict]() ratelimits under the assumption that you cannot forget a password you just changed 🙏.
+Allows the user to change set a new password given an authentication token.
 
 **JSON Parameters**
 | field | type | description |
