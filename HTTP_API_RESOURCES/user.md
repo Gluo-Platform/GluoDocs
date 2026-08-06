@@ -9,8 +9,12 @@ permissions than a "Regular" user.
 
 Not all information about a user is accessible to everyone. Certain fields are limited to specific permissions.
 
-1. The LARGE scope is public, but not always present. When the user is the Author of a post or reaction, fields marked LARGE will not be present.
-2. Fields marked with the USER scope are only available to the requesting User.
+1. Fields marked ALL are available ANY time a User is referenced.
+2. Fields marked LARGE extend the user in cases where it is the primary author.
+3. Just like ALL, the USER scope is public. Unlike ALL its fields are only 
+present when fetching a user
+4. Fields marked with the @ME are only avaible when fetching the 
+[current user](#get-current-user)
 
 ## User Object
 
@@ -19,16 +23,16 @@ Not all information about a user is accessible to everyone. Certain fields are l
 | id | snowflake | Unique user ID | ALL |
 | username | string | Unique username (1-25 characters) | ALL |
 | avatar | [MediaObject]() | The user's avatar | ALL |
-| banner | [BannerObject](#bannerobject) | The user's banner | LARGE |
-| permissions | integer | User [permissions](permissions.md#general-permissions) | ALL |
-| status | string | The user's status | ALL |
-| about | string | The user's about-me | LARGE |
-| private | boolean | Is it a private account | LARGE |
-| invisible | boolean | Is the user in invisible mode | USER |
-| creation_timestamp | unix timestamp | Unix timestamp of the creation date of the account | LARGE |
-| email_address? | string | Email address of user | USER |
-| streak | integer | Current posting streak of usr | LARGE |
-| feeds | [Feed]() list | List of user feeds | USER |
+| permissions | integer | User [permissions](permissions.md#general-permissions) | LARGE |
+| status | string | The user's status | LARGE |
+| banner | [BannerObject](#bannerobject) | The user's banner | USER |
+| about | string | The user's about-me | USER |
+| private | boolean | Is it a private account | USER |
+| creation_timestamp | unix timestamp | Unix timestamp of the creation date of the account | USER |
+| streak | integer | Current posting streak of usr | USER |
+| email_address? | string | Email address of user | @ME |
+| invisible | boolean | Is the user in invisible mode | @ME |
+| feeds | [Feed]() list | List of user feeds | @ME |
 
 ```json
 {"TODO": "exmaple user"}

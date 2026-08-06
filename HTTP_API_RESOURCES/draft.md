@@ -11,7 +11,7 @@ Drafts are unfinished, unuploaded posts.
 | quote_id | snowflake? | Quoted post ID |
 | reaction_quote_id | snowflake? | Quoted reaction ID |
 | description | string | Draft description |
-| media | [EditMedia]() | List of associated media |
+| media | [EditMedia](/HTTP_API_RESOURCES/post.md#edit-media) | List of associated media |
 | poll | string list | All options for the poll |
 | coins | integer | Any coins that would be gifted with the post |
 
