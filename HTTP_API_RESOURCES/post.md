@@ -12,9 +12,9 @@
 | creation_timestamp | unix timestamp | Timestamp of post creation |
 | edit_timestamp | unix timestamp | Timestamp of last post edit |
 | author | [user](/HTTP_API_RESOURCES/user.md#user-object) | Post author (LARGE) |
-| embed | [EmbedObject]()? | Post embed |
+| embed | [EmbedObject](#embed-object)? | Post embed |
 | media | [MediaObject]() list | List of media if any |
-| poll | string list | List of choices if any |
+| poll | [ChoiceObject](#choice-object) list | List of choices if any |
 
 
 ## Embed Object
@@ -28,31 +28,57 @@
 | author | [user](/HTTP_API_RESOURCES/user.md#user-object) | Post author (ALL) |
 
 
+## Choice Object
+
+| field | type | description |
+|-------|------|-------------|
+| id | snowflake | Unique choice ID | 
+| choice | string | Post or reaction contents |
+
+
 ## Create & edit post
 
 {% hint style="info" %}
-**`POST`** `/post/save`
+**`POST`** `/app/post/save`
 {% endhint %}
 {% hint style="warning" %}
-**`PATCH`** `/post/save`
+**`PATCH`** `/app/post/save`
 {% endhint %}
 
 Create or edit a post. Post with no contents (no quote, no description, no 
 media, no poll and no coins) will not be accepted.
 
+**JSON Params**
+
 | field | type | description |
 |-------|------|-------------|
-| post_id | snowflake | Unique post ID |
+| post_id? | snowflake | Unique post ID (required when editing) |
 | quote_id? | snowflake? | Quoted post ID |
 | reaction_quote_id? | snowflake? | Quoted reaction ID |
-| description? | string(1:1000) | post description |
-| media | [EditMedia](#edit-media) | List of associated media |
-| poll? | string list | All options for the poll |
+| description? | string(1:1000) | Post description |
+| media | EditMedia | List of associated media |
+| poll? | string(1:50) list | All options for the poll |
 | coins? | integer | Any coins that would be gifted with the post |
 
-### Edit Media
+**Edit Media**
 | field | type | description |
 |-------|------|-------------|
 | old | snowflake list | List of currently associated Media that was not removed |
 | new | snowflake list | List of new media IDs |
 | del | snowflaek list | List of media IDs that were deleted |
+
+
+## Vote on poll
+
+{% hint style="info" %}
+**`POST`** `/app/post/poll/vote`
+{% endhint %}
+
+Will make the requesting user vote for that choice. If they already have a vote
+under the post, it will be removed.
+
+**JSON Params**
+| field | type | description |
+|-------|------|-------------|
+| post_id | snowflake | Post that owns the poll |
+| choice_id | snowflake | Id of the voted poll option |
