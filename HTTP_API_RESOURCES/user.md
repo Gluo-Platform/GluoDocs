@@ -36,20 +36,24 @@ Not all information about a user is accessible to everyone. Certain fields are l
 
 
 ## Get current user
-<mark class="color-green">**GET**</mark> `/user/@me`
+
+{% hint style="success" %}
+**`GET`** `/user/@me`
+{% endhint %}
 
 Returns the [user](user.md#user-object) object for the Authenticated client.
 
 
 ## Get user
-**By ID**  
-<mark class="color-green">**GET**</mark> `/user/{user.id}`
 
-**BY username**  
-<mark class="color-green">**GET**</mark> `/user/{user.username}?username=true`
+**By ID**
+{% hint style="success" %}  
+**`GET`** `/user/{user.id}`
+{% endhint %}
+
+**BY username**
+{% hint style="success" %}  
+**`GET`** `/user/{user.username}?username=true`
+{% endhint %}
 
 Returns the [user](user.md#user-object) object for a given user.
-
-<!-- <mark class="color-blue">**POST**</mark> `/api/v1/users`
-<mark class="color-yellow">**PUT**</mark> `/api/v1/users/{id}`
-<mark class="color-red">**DELETE**</mark> `/api/v1/users/{id}` -->
