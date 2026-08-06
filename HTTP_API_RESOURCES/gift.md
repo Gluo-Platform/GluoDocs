@@ -1,0 +1,36 @@
+# Gift
+
+{% hint style="error" %}
+This page is subject to change as Premium is ondergoing some re-conceptualisation...
+{% endhint %}
+
+Managed and maintained by Users. Can be claimed by other Users.
+
+
+## Gift Object
+
+| field | type | description |
+|-------|------|-------------|
+| id | string | Unique gift ID |
+| user_id | snowflake | ID of owner |
+| receiver_id | snowflake? | ID of receiver |
+| coins | integer | Value of Gift |
+| creation_timestamp | unix timestamp | Timestamp of creation |
+| claim_timestamp | unix timestamp? | Timestamp of claim |
+
+
+## Create Gift
+
+{% hint style="info" %}
+**`POST`** `/premium/gift/create`
+{% endhint %}
+
+Removes the coins from the user's shareable coins. Setting a gift to 
+unshareable is exclusive to Moderators. Regular users cannot do this with their
+gifts.
+
+**JSON Params**
+| field | type | description |
+|-------|------|-------------|
+| coins | integer | Value of the gift |
+| unshareable? | boolean | Whether the gifted coins are shareable |

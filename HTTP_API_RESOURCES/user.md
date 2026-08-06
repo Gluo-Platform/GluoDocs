@@ -23,7 +23,7 @@ present when fetching a user
 | id | snowflake | Unique user ID | ALL |
 | username | string | Unique username (1-25 characters) | ALL |
 | avatar | [MediaObject]() | The user's avatar | ALL |
-| permissions | integer | User [permissions](permissions.md#general-permissions) | LARGE |
+| permissions | bitflags | User [permissions](permissions.md#general-permissions) | LARGE |
 | status | string | The user's status | LARGE |
 | banner | [BannerObject](#bannerobject) | The user's banner | USER |
 | about | string | The user's about-me | USER |
