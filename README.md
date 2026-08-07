@@ -87,6 +87,20 @@ Clients must provide a valid `Content-Type` header. Gluo will only accept
 
 _TODO_
 
+**Pagination**
+
+The amount of objects returned by paginated endpoints is not configureable. To
+fetch a specific page append the `?page={page}` query parameter. Paginated 
+pages are structured as follows. (Note that 'posts' is a key that depends on 
+the endpoint).
+
+```json
+{
+    "posts": {...},
+    "next_page": true
+}
+```
+
 
 ## WebSocket API
 

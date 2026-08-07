@@ -26,10 +26,10 @@
 
 ## Create & edit reaction
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/app/reaction/save`
 {% endhint %}
-{% hint style="warning" %}
+{% hint icon="code" style="warning" %}
 **`PATCH`** `/app/reaction/save`
 {% endhint %}
 

@@ -5,7 +5,7 @@ All related to the authentication of ["Regular"](user.md#user) users.
 
 ## Register - Create user
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/auth/register`
 {% endhint %}
 
@@ -16,15 +16,15 @@ return a success message.
 **JSON Parameters**
 | field | type | description |
 |-------|------|-------------|
-| username | string (1:30) | Unique username |
-| email | string (1:128) | Unique email address |
-| password | string (8:128) | User password |
+| username | string(1:30) | Unique username |
+| email | string(1:128) | Unique email address |
+| password | string(8:128) | User password |
 | referral? | string(10:10) | Referral ID used to register |
 
 
 ## Activate
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/auth/activate`
 {% endhint %}
 
@@ -38,7 +38,7 @@ Active a newly created user account with a token sent per email.
 
 ## Resend activation email
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/auth/email/resend`
 {% endhint %}
 
@@ -52,7 +52,7 @@ Will resend the activation email. _TODO: figure out spam prevention, API or fron
 
 ## Request password reset
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/auth/password/reset`
 {% endhint %}
 
@@ -66,7 +66,7 @@ Will send a reset password email to the user. Endpoint falls under [strict]() ra
 
 ## Confirm & Change password Reset
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/auth/password/reset`
 {% endhint %}
 
@@ -76,12 +76,12 @@ Allows the user to change set a new password given an authentication token.
 | field | type | description |
 |-------|------|-------------|
 | token | string(86:256) | Authentication token sent to the user over email |
-| password | string (8:128) | New user password |
+| password | string(8:128) | New user password |
 
 
 ## Login
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/auth/login`
 {% endhint %}
 
@@ -91,4 +91,4 @@ No authentication required for this endpoint. Ratelimist apply. Trade a password
 | field | type | description |
 |-------|------|-------------|
 | identifier | string(1:128) | Username or email address |
-| password | string (8:128) | Associated password |
+| password | string(8:128) | Associated password |

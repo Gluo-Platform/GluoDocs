@@ -17,7 +17,7 @@ passed.
 
 ## Create Referral
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/premium/referral/create`
 {% endhint %}
 

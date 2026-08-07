@@ -1,6 +1,6 @@
 # Premium
 
-{% hint style="error" %}
+{% hint style="danger" %}
 This page is subject to change as Premium is ondergoing some re-conceptualisation...
 {% endhint %}
 

@@ -38,10 +38,10 @@
 
 ## Create & edit post
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/app/post/save`
 {% endhint %}
-{% hint style="warning" %}
+{% hint icon="code" style="warning" %}
 **`PATCH`** `/app/post/save`
 {% endhint %}
 
@@ -52,7 +52,7 @@ media, no poll and no coins) will not be accepted.
 
 | field | type | description |
 |-------|------|-------------|
-| post_id? | snowflake | Unique post ID (required when editing) |
+| id? | snowflake | Unique post ID (required when editing) |
 | quote_id? | snowflake? | Quoted post ID |
 | reaction_quote_id? | snowflake? | Quoted reaction ID |
 | description? | string(1:1000) | Post description |
@@ -70,7 +70,7 @@ media, no poll and no coins) will not be accepted.
 
 ## Vote on poll
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/app/post/poll/vote`
 {% endhint %}
 

@@ -1,6 +1,6 @@
 # Gift
 
-{% hint style="error" %}
+{% hint style="danger" %}
 This page is subject to change as Premium is ondergoing some re-conceptualisation...
 {% endhint %}
 
@@ -21,7 +21,7 @@ Managed and maintained by Users. Can be claimed by other Users.
 
 ## Create Gift
 
-{% hint style="info" %}
+{% hint icon="code" style="info" %}
 **`POST`** `/premium/gift/create`
 {% endhint %}
 
@@ -34,3 +34,33 @@ gifts.
 |-------|------|-------------|
 | coins | integer | Value of the gift |
 | unshareable? | boolean | Whether the gifted coins are shareable |
+
+
+## Get Gifts
+
+{% hint icon="code" style="success" %}
+**`GET`** `/drafts`
+{% endhint %}
+
+Returns a [paginated (`key:gifts`)](/README.md#gluo-api-reference) list of 
+[gift](#gift-object) objects.
+
+
+## Claim Gift
+
+{% hint icon="code" style="warning" %}
+**`PATCH`** `/premium/gift/{gift.id}/claim`
+{% endhint %}
+
+If the gift wasn't claimed already, the requesting user will receive it.
+
+
+## Delete Gift
+
+{% hint icon="code" style="danger" %}
+**`DELETE`** `/premium/gift/{gift.id}/delete`
+{% endhint %}
+
+Requires the gift to be unclaimed, returns the value to the users shareable 
+coins.
+
