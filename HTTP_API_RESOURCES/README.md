@@ -1,2 +1,2 @@
-# HTTP Api Resources
+# HTTP API Resources
 

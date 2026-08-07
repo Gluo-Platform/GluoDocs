@@ -106,7 +106,7 @@ the endpoint).
 
 The WebSocket API is used for mainting consistent state between client and 
 server. This is used for receiving real-time events that the client can track
-to update local state. For opening a WebSocket connection read more [here]()
+to update local state. For opening a WebSocket connection read more [here](./WEBSOCKET_API_RESOURCES/overview.md).
 
 
 ## Media

@@ -23,7 +23,7 @@ present when fetching a user
 | id | snowflake | Unique user ID | ALL |
 | username | string | Unique username (1-25 characters) | ALL |
 | avatar | [MediaObject]() | The user's avatar | ALL |
-| permissions | bitflags | User [permissions](permissions.md#general-permissions) | LARGE |
+| permissions | bitflags | User [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The user's status | LARGE |
 | banner | [BannerObject](#bannerobject) | The user's banner | USER |
 | about | string | The user's about-me | USER |
@@ -48,23 +48,29 @@ present when fetching a user
 
 ## Get current user
 
-{% hint style="success" %}
+{% hint icon="code" style="success" %}
 **`GET`** `/user/@me`
 {% endhint %}
 
-Returns the [user](user.md#user-object) object for the Authenticated client.
+Returns the [user](user.md#user-object) object for the Authenticated client. 
+Add the `?relation=true` parameter to receive a 
+[WebSocket Event](/WEBSOCKET_API_RESOURCES/events.md#0002-userrelation) with 
+the relation status of the requesting and requested user.
 
 
 ## Get user
 
 **By ID**
-{% hint style="success" %}  
+{% hint icon="code" style="success" %}  
 **`GET`** `/user/{user.id}`
 {% endhint %}
 
 **BY username**
-{% hint style="success" %}  
+{% hint icon="code" style="success" %}  
 **`GET`** `/user/{user.username}?username=true`
 {% endhint %}
 
 Returns the [user](user.md#user-object) object for a given user.
+Add the `?relation=true` parameter to receive a 
+[WebSocket Event](/WEBSOCKET_API_RESOURCES/events.md#0002-userrelation) with 
+the relation status of the requesting and requested user.

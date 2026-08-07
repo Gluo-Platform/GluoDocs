@@ -39,7 +39,7 @@ gifts.
 ## Get Gifts
 
 {% hint icon="code" style="success" %}
-**`GET`** `/drafts`
+**`GET`** `/premium/gifts`
 {% endhint %}
 
 Returns a [paginated (`key:gifts`)](/README.md#gluo-api-reference) list of 
