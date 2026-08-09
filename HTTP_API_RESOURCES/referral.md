@@ -21,10 +21,10 @@ passed.
 **`POST`** `/premium/referral/create`
 {% endhint %}
 
-Every regular user can have 1 referral. Team can have up to a 100 and provide a
-custom name.
+Every User can have 1 referral. Team can have up to a 100 and provide a custom 
+name.
 
 **JSON Params**
 | field | type | description |
 |-------|------|-------------|
-| name | string(1:32)? | Name, ignored for regular users |
+| name | string(1:32)? | Name, ignored for non Team users |

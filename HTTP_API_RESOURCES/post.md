@@ -7,8 +7,6 @@
 |-------|------|-------------|
 | id | snowflake | Unique post ID |
 | description | string | post descript ion |
-| gift_id | string? | ID of associated gift |
-| coins | integer | Value of associated gift |
 | creation_timestamp | unix timestamp | Timestamp of post creation |
 | edit_timestamp | unix timestamp | Timestamp of last post edit |
 | author | [user](/HTTP_API_RESOURCES/user.md#user-object) | Post author (LARGE) |
@@ -46,19 +44,18 @@
 {% endhint %}
 
 Create or edit a post. Post with no contents (no quote, no description, no 
-media, no poll and no coins) will not be accepted.
+media and no poll) will not be accepted.
 
 **JSON Params**
 
 | field | type | description |
 |-------|------|-------------|
 | id? | snowflake | Unique post ID (required when editing) |
-| quote_id? | snowflake? | Quoted post ID |
-| reaction_quote_id? | snowflake? | Quoted reaction ID |
-| description? | string(1:1000) | Post description |
+| quote_id? | snowflake | Quoted post ID |
+| reaction_quote_id? | snowflake | Quoted reaction ID |
+| description | string(1:1000)? | Draft description |
 | media | EditMedia | List of associated media |
-| poll? | string(1:50) list | All options for the poll |
-| coins? | integer | Any coins that would be gifted with the post |
+| poll | string(1:50) list | All options for the poll |
 
 **Edit Media**
 | field | type | description |
@@ -66,6 +63,33 @@ media, no poll and no coins) will not be accepted.
 | old | snowflake list | List of currently associated Media that was not removed |
 | new | snowflake list | List of new media IDs |
 | del | snowflaek list | List of media IDs that were deleted |
+
+### Media-keys
+
+{% hint icon="code" style="success" %}
+**`GET`** `/app/post/media-key`
+{% endhint %}
+
+Will grant you a media-key which is required to authenticate requests to the 
+MediaApi. Returns a [media key]() object. Read more on uploading media [here]()
+
+
+## Like post
+
+{% hint icon="code" style="warning" %}
+**`PATCH`** `/app/post/{post.id}/like/toggle?value=1`
+{% endhint %}
+
+Takes a queryparameter `value` that must have a value between 1 and 5 when 
+present. This parameter is only optional when removing a like. Returns the 
+current status:
+
+```json
+{
+    "has_liked": true,
+    "delta_likes": -3
+}
+```
 
 
 ## Vote on poll

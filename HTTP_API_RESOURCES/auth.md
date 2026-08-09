@@ -1,6 +1,6 @@
 # Auth
 
-All related to the authentication of ["Regular"](user.md#user) users.
+All related to the authentication of [Users](user.md#user).
 
 
 ## Register - Create user

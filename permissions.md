@@ -15,15 +15,14 @@ that both start from 1
 
 | permission | value | type |
 |------------|-------|------|
-| developer_tools | 1 | flag |
-| feature_previews | 2 | flag |
-| verified_bot | 4 | flag |
-| verified_user | 8 | flag |
-| verified_organization | 16 | flag |
-| partner | 32 | permission |
-| manage_reports | 64 | permission |
-| manage_permissions  | 128 | permission |
-| manage_users  | 256 | permission |
+| developer_tools | 2 | flag |
+| feature_previews | 4 | flag |
+| verified_bot | 8 | flag |
+| verified_user | 16 | flag |
+| verified_organization | 32 | flag |
+| partner | 64 | permission |
+| manage_reports | 128 | permission |
+| manage_permissions  | 256 | permission |
 
 
 ## Premium Permissions

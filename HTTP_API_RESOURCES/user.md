@@ -1,9 +1,5 @@
 # User
 
-There are two types of user: "Regular" and Bot. They operate very similarly, 
-the difference is that the last one is owned by a "Regular" user has less
-permissions than a "Regular" user.
-
 
 ## Scopes
 

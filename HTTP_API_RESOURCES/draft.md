@@ -13,16 +13,15 @@ Drafts are unfinished, unuploaded posts.
 | description | string | Draft description |
 | media | EditMedia | List of associated media |
 | poll | string(1:50) list | All options for the poll |
-| coins | integer | Any coins that would be gifted with the post |
 
 
 ## Create & edit draft
 
 {% hint icon="code" style="info" %}
-**`POST`** `/draft/save`
+**`POST`** `/draft/create`
 {% endhint %}
 {% hint icon="code" style="warning" %}
-**`PATCH`** `/draft/save`
+**`PUT`** `/draft/edit`
 {% endhint %}
 
 
@@ -31,12 +30,11 @@ Drafts are unfinished, unuploaded posts.
 | field | type | description |
 |-------|------|-------------|
 | id? | snowflake | Unique draft ID (required when editing) |
-| quote_id? | snowflake? | Quoted post ID |
-| reaction_quote_id? | snowflake? | Quoted reaction ID |
-| description? | string(1:1000) | Draft description |
+| quote_id? | snowflake | Quoted post ID |
+| reaction_quote_id? | snowflake | Quoted reaction ID |
+| description | string(1:1000)? | Draft description |
 | media | EditMedia | List of associated media |
-| poll? | string(1:50) list | All options for the poll |
-| coins? | integer | Any coins that would be gifted with the post |
+| poll | string(1:50) list | All options for the poll |
 
 
 ## Get drafts

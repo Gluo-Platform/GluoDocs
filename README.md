@@ -57,9 +57,9 @@ Authenticating with the Gluo API can be done in two ways:
 Authorization: Bearer 89f4865eb59c0aba22fc9f9b9b75fc5218a1f502b3835a4ce26cc39ab50f351c92d3ac882eb4594856ea4c7f7e4620ef0fb94ea06ac892633d5cef1630e24766
 ```
 
-**Example Bot Authorization Header**
+**Example App Authorization Header**
 ```shell
-Authorization: Bot 89f4865eb59c0aba22fc9f9b9b75fc5218a1f502b3835a4ce26cc39ab50f351c92d3ac882eb4594856ea4c7f7e4620ef0fb94ea06ac892633d5cef1630e24766
+Authorization: App 89f4865eb59c0aba22fc9f9b9b75fc5218a1f502b3835a4ce26cc39ab50f351c92d3ac882eb4594856ea4c7f7e4620ef0fb94ea06ac892633d5cef1630e24766
 ```
 
 

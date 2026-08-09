@@ -26,8 +26,7 @@ Managed and maintained by Users. Can be claimed by other Users.
 {% endhint %}
 
 Removes the coins from the user's shareable coins. Setting a gift to 
-unshareable is exclusive to Moderators. Regular users cannot do this with their
-gifts.
+unshareable is exclusive to Moderators.
 
 **JSON Params**
 | field | type | description |

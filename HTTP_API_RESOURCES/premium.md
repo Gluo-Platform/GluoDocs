@@ -5,7 +5,7 @@ This page is subject to change as Premium is ondergoing some re-conceptualisatio
 {% endhint %}
 
 The [Premium Object](#premium-object) is tightly coupled to the User. When a 
-User (non bot) is activated, a Premium Object will be created.
+User (non App) is activated, a Premium Object will be created.
 
 
 ## Premium Object
