@@ -50,7 +50,7 @@ me so I can fix it rather than introducing support for it._
 Authenticating with the Gluo API can be done in two ways:
 
 1. Using a User token gained by a login request 
-2. Using a _Bot_ token _(TODO: this system is not yet finished)_
+2. Using a App token avaible through our [developer program](https://www.gluo.xyz/developers)
 
 **Example User Authorization Header**
 ```shell
@@ -106,7 +106,7 @@ the endpoint).
 
 The WebSocket API is used for mainting consistent state between client and 
 server. This is used for receiving real-time events that the client can track
-to update local state. For opening a WebSocket connection read more [here](./WEBSOCKET_API_RESOURCES/overview.md).
+to update local state. For opening a WebSocket connection read more [here](./WEBSOCKET_API/overview.md).
 
 
 ## Media
@@ -121,3 +121,11 @@ done with signed access-urls. These are returned by relevant API requests (post
 object contains a signed url, etc...). Extension and file formats are all 
 handled by this service and provided to you through the API. For uploading and
 retreiving media, read more [here]()
+
+
+## App SDK
+
+App clients are a special type of client that can attach [App Instances]() to 
+posts, or create regular posts by a 3rd party through our API. Learn more about
+Apps [here](/HTTP_API_RESOURCES/app.md) and how to work with App Instances 
+[here](/APP_SDK/overview.md).

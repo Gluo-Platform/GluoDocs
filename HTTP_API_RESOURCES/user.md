@@ -17,7 +17,7 @@ present when fetching a user
 | field | type | description | scope |
 |-------|------|-------------|-------|
 | id | snowflake | Unique user ID | ALL |
-| username | string | Unique username (1-25 characters) | ALL |
+| username | string | Unique username (1-30 characters) | ALL |
 | avatar | [MediaObject]() | The user's avatar | ALL |
 | permissions | bitflags | User [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The user's status | LARGE |
@@ -50,7 +50,7 @@ present when fetching a user
 
 Returns the [user](user.md#user-object) object for the Authenticated client. 
 Add the `?relation=true` parameter to receive a 
-[WebSocket Event](/WEBSOCKET_API_RESOURCES/events.md#0002-userrelation) with 
+[WebSocket Event](/WEBSOCKET_API/events.md#0002-userrelation) with 
 the relation status of the requesting and requested user.
 
 
@@ -68,5 +68,5 @@ the relation status of the requesting and requested user.
 
 Returns the [user](user.md#user-object) object for a given user.
 Add the `?relation=true` parameter to receive a 
-[WebSocket Event](/WEBSOCKET_API_RESOURCES/events.md#0002-userrelation) with 
+[WebSocket Event](/WEBSOCKET_API/events.md#0002-userrelation) with 
 the relation status of the requesting and requested user.

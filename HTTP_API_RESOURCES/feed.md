@@ -5,7 +5,7 @@ There are two types of feeds.
 over (public) Gluo. Users are give some control over what a feed shows them.
 2. **Group feeds** are shared feeds between users. The content of these feeds
 is created by the members of the feed. Content consists of 
-[Posts](./post.md#post-object), [Shared Posts]() and [Canvases]() _(TODO)_
+[Posts](./post.md#post-object) and [Shared Posts]().
 
 
 ## Feed Object

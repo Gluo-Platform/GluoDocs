@@ -1,4 +1,4 @@
-# Generally Available Endpoints
+# Endpoints Permissions
 
 These endpoints either require a App Authorization Header or no header at all. 
 (Anything accessible to an App is also accessible to a User)
