@@ -125,7 +125,8 @@ retreiving media, read more [here]()
 
 ## App SDK
 
-App clients are a special type of client that can attach [App Instances]() to 
+App clients are a special type of client that can attach 
+[App Instances](/HTTP_API_RESOURCES/post.md#app-instance) to 
 posts, or create regular posts by a 3rd party through our API. Learn more about
 Apps [here](/HTTP_API_RESOURCES/app.md) and how to work with App Instances 
 [here](/APP_SDK/overview.md).

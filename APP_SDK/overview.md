@@ -2,7 +2,7 @@
 
 Gluo Apps are available to [Group Feeds](/HTTP_API_RESOURCES/feed.md#group-feeds).
 Features explained here are only accessible to active [Apps](/HTTP_API_RESOURCES/app.md)
-through [App Instances]().
+through [App Instances](/HTTP_API_RESOURCES/post.md#app-instance).
 
 
 ## Install the SDK
@@ -24,10 +24,11 @@ const sdk = new AppSDK();
 ## Flow
 
 Posts [Post](/HTTP_API_RESOURCES/post.md) are served to users through our API. 
-Apps can create posts with [App Instances]() which are treated as regular posts
-by the backend. When a post with an `app_url` comes into view for a user, a 
-[MOUNT](#events) event will be emitted. If this is the first time your instance 
-is loaded, it will be preceded by an [INIT](#events) event.
+Apps can create posts with [App Instances](/HTTP_API_RESOURCES/post.md#app-instance) 
+which are treated as regular posts by the backend. When a post with an 
+`app_url` comes into view for a user, a [MOUNT](#events) event will be emitted. 
+If this is the first time your instance is loaded, it will be preceded by an 
+[INIT](#events) event.
 
 
 ## Methods

@@ -13,10 +13,10 @@
 | embed | [EmbedObject](#embed-object)? | Post embed |
 | media | [MediaObject]() list | List of media if any |
 | poll | [ChoiceObject](#choice-object) list | List of choices if any |
-| app_url | string(1:256)? | Url to application (only available to [App clients](./app.md#app)) |
+| app_instance | [AppInstance](#app-instance)? | Application instance |
 
 
-## Embed Object
+### Embed Object
 
 | field | type | description |
 |-------|------|-------------|
@@ -27,12 +27,23 @@
 | author | [user](/HTTP_API_RESOURCES/user.md#user-object) | Post author (ALL) |
 
 
-## Choice Object
+### Choice Object
 
 | field | type | description |
 |-------|------|-------------|
 | id | snowflake | Unique choice ID | 
 | choice | string | Post or reaction contents |
+
+
+### App Instance
+
+Attached to posts created with `is_app=true` by Apps. Will be rendered as a
+sandboxed `iframe` with the `url` as origin.
+
+| field | type | description |
+|-------|------|-------------|
+| url | string | Application url |
+| key | string | Key signing the user and this instance |
 
 
 ## Create & edit post
@@ -48,7 +59,7 @@ Create or edit a post. Post with no contents (no quote, no description, no
 media and no poll) will not be accepted. 
 
 If the client is an App, it may set is_app to `true`, to attach an 
-[App Instance]() to the post. Once set, this cannot be edited. Can only be 
+[App Instance](#app-instance) to the post. Once set, this cannot be edited. Can only be 
 combined with a description.
 
 **JSON Params**

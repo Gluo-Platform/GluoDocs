@@ -15,25 +15,18 @@ present when fetching a app
 | field | type | description | scope |
 |-------|------|-------------|-------|
 | id | snowflake | Unique app ID | ALL |
-| appname | string | Unique appname (1-30 characters) | ALL |
+| username | string | Appname | ALL |
 | avatar | [MediaObject]() | The app's avatar | ALL |
 | permissions | bitflags | App [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The app's status | LARGE |
-| banner | [BannerObject](#bannerobject) | The app's banner | USER |
+| banner | [BannerObject](./user.md#bannerobject) | The app's banner | USER |
 | about | string | The app's about-me | USER |
-| private | boolean | Is it a private account | USER |
-| creation_timestamp | unix timestamp | Unix timestamp of the creation date of the account | USER |
+| private | boolean | Is it a private app | USER |
+| creation_timestamp | unix timestamp | Unix timestamp of the creation date of the app | USER |
 
 ```json
 {"TODO": "exmaple app"}
 ```
-
-
-## BannerObject
-| field | type | description |
-|-------|------|-------------|
-| type | "hex" \| "media" | Type of the banner |
-| value | string \| [MediaObject]() | Hexcode or banner media object |
 
 
 ## Get current app
@@ -47,17 +40,27 @@ Returns the [app](app.md#app-object) object for the Authenticated client.
 
 ## Get app
 
-**By ID**
-{% hint icon="code" style="success" %}  
+{% hint icon="code" style="success" %}
 **`GET`** `/app/{app.id}`
 {% endhint %}
 
-**BY appname**
-{% hint icon="code" style="success" %}  
-**`GET`** `/app/{app.appname}?appname=true`
+Returns the [app](app.md#app-object) object for the provided id.
+
+
+## Create Reaction
+
+{% hint icon="code" style="info" %}
+**`POST`** `/app/reaction/create`
 {% endhint %}
 
-Returns the [app](app.md#app-object) object for a given app.
-Add the `?relation=true` parameter to receive a 
-[WebSocket Event](/WEBSOCKET_API/events.md#0002-apprelation) with 
-the relation status of the requesting and requested app.
+Apps are allowed to create a reaction in the name of a user under posts with an
+[App Instance](./post.md#app-instance).
+
+**JSON Params**
+
+| field | type | description |
+|-------|------|-------------|
+| key | string | App Instance key |
+| user_id | snowflake | User that is reacting |
+| post_id | snowflake | Post reacted to |
+| description | string(1:500) | Reaction description |
