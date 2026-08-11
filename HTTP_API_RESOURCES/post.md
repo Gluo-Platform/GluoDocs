@@ -49,10 +49,10 @@ sandboxed `iframe` with the `url` as origin.
 ## Create & edit post
 
 {% hint icon="code" style="info" %}
-**`POST`** `/app/post/save`
+**`POST`** `/post/save`
 {% endhint %}
 {% hint icon="code" style="warning" %}
-**`PATCH`** `/app/post/save`
+**`PATCH`** `/post/save`
 {% endhint %}
 
 Create or edit a post. Post with no contents (no quote, no description, no 
@@ -84,7 +84,7 @@ combined with a description.
 ### Media-keys
 
 {% hint icon="code" style="success" %}
-**`GET`** `/app/post/media-key`
+**`GET`** `/post/media-key`
 {% endhint %}
 
 Will grant you a media-key which is required to authenticate requests to the 
@@ -94,7 +94,7 @@ MediaApi. Returns a [media key]() object. Read more on uploading media [here]()
 ## Like post
 
 {% hint icon="code" style="warning" %}
-**`PATCH`** `/app/post/{post.id}/like/toggle?value=1`
+**`PATCH`** `/post/{post.id}/like/toggle?value=1`
 {% endhint %}
 
 Takes a queryparameter `value` that must have a value between 1 and 5 when 
@@ -112,7 +112,7 @@ current status:
 ## Vote on poll
 
 {% hint icon="code" style="info" %}
-**`POST`** `/app/post/poll/vote`
+**`POST`** `/post/poll/vote`
 {% endhint %}
 
 Will make the requesting user vote for that choice. If they already have a vote

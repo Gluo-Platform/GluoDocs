@@ -3,12 +3,12 @@
 
 ## Scopes
 
-Not all information about a app is accessible to everyone. Certain fields are limited to specific permissions.
+Not all information about an app is accessible to everyone. Certain fields are 
+limited to specific permissions.
 
-1. Fields marked ALL are available ANY time a App is referenced.
+1. Fields marked ALL are available ANY time an App is referenced.
 2. Fields marked LARGE extend the app in cases where it is the primary author.
-3. Just like ALL, the USER scope is public. Unlike ALL its fields are only 
-present when fetching a app
+3. Fields marked APP are only present when fetching a full app
 
 ## App Object
 
@@ -19,14 +19,46 @@ present when fetching a app
 | avatar | [MediaObject]() | The app's avatar | ALL |
 | permissions | bitflags | App [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The app's status | LARGE |
-| banner | [BannerObject](./user.md#bannerobject) | The app's banner | USER |
-| about | string | The app's about-me | USER |
-| private | boolean | Is it a private app | USER |
-| creation_timestamp | unix timestamp | Unix timestamp of the creation date of the app | USER |
+| banner | [BannerObject](./user.md#bannerobject) | The app's banner | APP |
+| about | string | The app's about-me | APP |
+| private | boolean | Is it a private app | APP |
+| creation_timestamp | unix timestamp | Unix timestamp of the creation date of the app | APP |
 
 ```json
 {"TODO": "exmaple app"}
 ```
+
+
+## Create App
+
+{% hint icon="code" style="info" %}
+**`POST`** `/app/create`
+{% endhint %}
+
+Users with the [developer permission](/permissions.md#general-permissions) cna
+own up to 5 apps.
+
+**JSON Params**
+
+| field | type | description |
+|-------|------|-------------|
+| app_name | string(1:50) | App display nmae |
+| app_url | string(1:256) | Unique application URL |
+| avatar | snowflake | App avatar |
+| status | stirng(1:75) | App status |
+| about | string(1:500) | App about-me |
+| banner | TODO | App banner |
+
+
+## Set On-Add behaviour
+
+{% hint icon="code" style="warning" %}
+**`PUT`** `/app/on-add`
+{% endhint %}
+
+The JSON Params for this request are the same of a 
+[post](./post.md#create--edit-post). The provided post is what the app will 
+send immediately after being added to a feed. It is important to note that this initial post is <u>not</u> allowed to contain any media.
 
 
 ## Get current app
@@ -64,3 +96,19 @@ Apps are allowed to create a reaction in the name of a user under posts with an
 | user_id | snowflake | User that is reacting |
 | post_id | snowflake | Post reacted to |
 | description | string(1:500) | Reaction description |
+
+
+## Add App
+
+{% hint icon="code" style="info" %}
+**`POST`** `/app/add`
+{% endhint %}
+
+Add a public app to a Group Feed.
+
+**JSON Params**
+
+| field | type | description |
+|-------|------|-------------|
+| app_id | snowflake | Unique App ID |
+| feed_id | snowflake | Unique Group Feed ID |

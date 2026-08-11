@@ -3,12 +3,12 @@
 
 ## Scopes
 
-Not all information about a user is accessible to everyone. Certain fields are limited to specific permissions.
+Not all information about a user is accessible to everyone. Certain fields are 
+limited to specific permissions.
 
 1. Fields marked ALL are available ANY time a User is referenced.
 2. Fields marked LARGE extend the user in cases where it is the primary author.
-3. Just like ALL, the USER scope is public. Unlike ALL its fields are only 
-present when fetching a user
+3. Fields marked USER are only present when fetching a full user
 4. Fields marked with the @ME are only avaible when fetching the 
 [current user](#get-current-user)
 

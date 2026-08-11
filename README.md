@@ -120,7 +120,7 @@ Media in Gluo is stored on a separate CDN. Access to the resources can only be
 done with signed access-urls. These are returned by relevant API requests (post
 object contains a signed url, etc...). Extension and file formats are all 
 handled by this service and provided to you through the API. For uploading and
-retreiving media, read more [here]()
+retreiving media, read more [here](./media.md#uploading-media)
 
 
 ## App SDK

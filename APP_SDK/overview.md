@@ -31,6 +31,17 @@ If this is the first time your instance is loaded, it will be preceded by an
 [INIT](#events) event.
 
 
+### Testing
+
+You can emulate the flow (for testing reasons) with the test method. This takes
+an optional time argument (milliseconds) which is how long it will wait before
+sending the `UNMOUNT` event.
+
+```ts
+sdk.test(1000);
+```
+
+
 ## Methods
 
 ### on()
@@ -71,6 +82,7 @@ user. Contains a payload _TODO: PROVIDE ACTUAL VALUES_
     "post_id": ...,
     "user_id": ...,
     "username": ...,
-    "avatar": ...
+    "avatar": ...,
+    "key": ...,
 }
 ```

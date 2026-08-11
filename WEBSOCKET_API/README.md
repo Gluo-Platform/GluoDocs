@@ -1,1 +1,1 @@
-# WebSocket API Resources
+# WebSocket API
