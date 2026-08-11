@@ -23,7 +23,6 @@ Send when the `?relation=true` parameter is appended when fetching a user.
 |-------|------|-------------|
 | id | snowflake | Unique user ID |
 | is_s | boolean | Is subscribed to user |
-| req_s | boolean | Requested to subscribe to user |
 | is_f | boolean | Is friend of user |
 | req_f | boolean | Requested to friend user |
 

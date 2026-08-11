@@ -1,12 +1,16 @@
 # Endpoint Permissions
 
 These endpoints either require a App Authorization Header or no header at all. 
-(Anything accessible to an App is also accessible to a User)
+Most endpoints accessible to an App is also accessible to a User. This is not 
+the case for `/app/reaction/create`.
 
 
 ## No Authorization
 
+Ratelimits apply.
+
 - [/auth/login](./HTTP_API_RESOURCES/auth.md#login) 
+- [/statistics/app](./HTTP_API_RESOURCES/statistics.md#app-statistics)
 
 
 ## Minimum of App Authorization
