@@ -19,10 +19,10 @@ Send friend request to user.
 ## Delete friend request
 
 {% hint icon="code" style="danger" %}
-**`DELETE`** `/user/relations/request/delete`
+**`DELETE`** `/user/relations/{user.id}/request/delete`
 {% endhint %}
 
-Delete any existing friend requests
+Delete outgoing friend request to provided user.
 
 
 ## Remove friend

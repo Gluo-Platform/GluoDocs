@@ -11,7 +11,7 @@
 | edit_timestamp | unix timestamp | Timestamp of last post edit |
 | author | [user](/HTTP_API_RESOURCES/user.md#user-object) | Post author (LARGE) |
 | embed | [EmbedObject](#embed-object)? | Post embed |
-| media | [MediaObject]() list | List of media if any |
+| media | [MediaObject](#media-object) list | List of media if any |
 | poll | [ChoiceObject](#choice-object) list | List of choices if any |
 | app_instance | [AppInstance](#app-instance)? | Application instance |
 
@@ -25,6 +25,14 @@
 | description | string | Post or reaction contents |
 | thumbnail | [MediaObject]()? | Optional embed thumbnail |
 | author | [user](/HTTP_API_RESOURCES/user.md#user-object) | Post author (ALL) |
+
+
+### Media Object
+
+| field | type | description |
+|-------|------|-------------|
+| label | string | Alt text for media | 
+| url | string | Signed media url |
 
 
 ### Choice Object
@@ -42,6 +50,7 @@ sandboxed `iframe` with the `url` as origin.
 
 | field | type | description |
 |-------|------|-------------|
+| app_id | snowflake | Application ID |
 | url | string | Application url |
 | key | string | Key signing the user and this instance |
 

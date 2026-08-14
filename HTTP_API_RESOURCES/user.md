@@ -18,7 +18,7 @@ limited to specific permissions.
 |-------|------|-------------|-------|
 | id | snowflake | Unique user ID | ALL |
 | username | string | Unique username (1-30 characters) | ALL |
-| avatar | [MediaObject]() | The user's avatar | ALL |
+| avatar | [Media Access ULR]() | The user's avatar | ALL |
 | permissions | bitflags | User [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The user's status | LARGE |
 | banner | [BannerObject](#bannerobject) | The user's banner | USER |
@@ -35,11 +35,24 @@ limited to specific permissions.
 ```
 
 
-## BannerObject
+### BannerObject
 | field | type | description |
 |-------|------|-------------|
-| type | "hex" \| "media" | Type of the banner |
-| value | string \| [MediaObject]() | Hexcode or banner media object |
+| type | "hex" \| "image" | Type of the banner |
+| value | string \| [Media Access ULR]() | Hexcode or banner media object |
+
+
+## User media object
+
+| field | type | description |
+|-------|------|-------------|
+| id | snowflake | Unique media ID |
+| post_id | snowflake | Unique post ID |
+| url | [Media Access ULR]() | Signed media url |
+
+```json
+{"TODO": "example media"}
+```
 
 
 ## Get current user
@@ -70,3 +83,56 @@ Returns the [user](user.md#user-object) object for a given user.
 Add the `?relation=true` parameter to receive a 
 [WebSocket Event](/WEBSOCKET_API/events.md#0002-userrelation) with 
 the relation status of the requesting and requested user.
+
+
+## Get user bookmarks
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/bookmarks/`
+{% endhint %}
+
+Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of 
+[post](./post.md#post-object) objects.
+
+
+## Get archive
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/archive/`
+{% endhint %}
+
+Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of 
+[post](./post.md#post-object) objects.
+
+
+## Get user posts
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/{user.id}/posts`
+{% endhint %}
+
+Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of 
+[post](./post.md#post-object) objects.
+
+
+## Get user media
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/{user.id}/media`
+{% endhint %}
+
+Returns a [paginated (`key:media`)](/README.md#gluo-api-reference) list of 
+[user media]() objects.
+
+
+## Get user streak
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/{user.id}/streak`
+{% endhint %}
+
+```json
+{
+    "todo": "example"
+}
+```
