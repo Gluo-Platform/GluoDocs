@@ -125,6 +125,17 @@ Returns a [paginated (`key:media`)](/README.md#gluo-api-reference) list of
 [user media]() objects.
 
 
+## Get user reactions
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/{user.id}/reactions`
+{% endhint %}
+
+Returns a [paginated (`key:reactions`)](/README.md#gluo-api-reference) list of 
+[user media]() objects. Unless the visited user is also the requesting user,
+this will not include any reactions placed under posts of private authors.
+
+
 ## Get user streak
 
 {% hint icon="code" style="success" %}
