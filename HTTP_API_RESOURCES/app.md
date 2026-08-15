@@ -44,10 +44,16 @@ own up to 5 apps.
 |-------|------|-------------|
 | app_name | string(1:50) | App display nmae |
 | app_url | string(1:256) | Unique application URL |
-| avatar | snowflake | App avatar |
-| status | stirng(1:75) | App status |
-| about | string(1:500) | App about-me |
-| banner | TODO | App banner |
+| avatar | snowflake? | App avatar |
+| status | string(1:75)? | App status |
+| about | string(1:500)? | App about-me |
+| banner | snowflake? | App banner |
+
+```json
+{
+  "token": "19h4YSI9AAEKiXt0Oh8TMHjKNOflz5PcFVyCcmvXm8FpOECMf1WG81iE9n-OWDh-8r-Ji8TQZi4MLOiIJwb55w"
+}
+```
 
 
 ## Set On-Add behaviour

@@ -47,7 +47,7 @@ these changes. `https://www.gluo.xyz/revert/email/{token}`. Make a request to
 
 ## Revert Email Change
 
-{% hint icon="code" style="warning" %}
+{% hint icon="code" style="danger" %}
 **`DELETE`** `/user/settings/email/{token}/revert`
 {% endhint %}
 
@@ -59,7 +59,7 @@ change.
 
 ## Delete request
 
-{% hint icon="code" style="warning" %}
+{% hint icon="code" style="danger" %}
 **`DELETE`** `/user/settings/delete`
 {% endhint %}
 
@@ -75,7 +75,7 @@ this decision. A mail will be sent with the revert-link.
 
 ## Revert deletion request
 
-{% hint icon="code" style="warning" %}
+{% hint icon="code" style="danger" %}
 **`DELETE`** `/user/settings/delete/{token}/cancel`
 {% endhint %}
 

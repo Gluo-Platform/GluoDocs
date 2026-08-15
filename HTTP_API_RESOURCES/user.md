@@ -31,7 +31,31 @@ limited to specific permissions.
 | feeds | [Feed]() list | List of user feeds | @ME |
 
 ```json
-{"TODO": "exmaple user"}
+{
+  "about": "Another awesome Gluo user!",
+  "avatar": "image/default.webp?e=1786784248&s=z-tm45mgujooLsMteDu7fedqdwKZohYke1I98F2QCdI",
+  "banner": {
+    "type": "hex",
+    "value": "#000000"
+  },
+  "creation_timestamp": 1786738259.71009,
+  "email_address": "test@example.com",    /* @ME */
+  "feeds": [
+    {
+      "icon": "fa-home",
+      "id": "7494123429667278848",
+      "name": "fa-home",
+      "type": "feed"
+    }
+  ],                                      /* @ME */
+  "id": "7494123429654695936",
+  "invisible": false,                     /* @ME */
+  "permissions": 1,
+  "private": false,
+  "status": "Hi, I am a Gluo user!",
+  "streak": 1,
+  "username": "GluoTesting"
+}
 ```
 
 
@@ -147,3 +171,13 @@ this will not include any reactions placed under posts of private authors.
     "todo": "example"
 }
 ```
+
+
+## Get user apps
+
+{% hint icon="code" style="success" %}
+**`GET`** `/user/{user.id}/apps`
+{% endhint %}
+
+Returns a [paginated (`key:apps`)](/README.md#gluo-api-reference) list of 
+[App](./app.md#app-object) objects.

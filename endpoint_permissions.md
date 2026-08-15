@@ -11,6 +11,7 @@ Ratelimits apply.
 
 - [/auth/login](./HTTP_API_RESOURCES/auth.md#login) 
 - [/statistics/app](./HTTP_API_RESOURCES/statistics.md#app-statistics)
+- [/user/{query}](./HTTP_API_RESOURCES/user.md#get-user)
 
 
 ## Minimum of App Authorization
@@ -19,4 +20,3 @@ Ratelimits apply.
 - [/app/reaction/create](./HTTP_API_RESOURCES/app.md#create-reaction)
 - [/post/create](./HTTP_API_RESOURCES/post.md#create--edit-post)
 - [/post/edit](./HTTP_API_RESOURCES/post.md#create--edit-post)
-- [/user/{query}](./HTTP_API_RESOURCES/user.md#get-user)

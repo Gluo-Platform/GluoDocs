@@ -92,3 +92,9 @@ No authentication required for this endpoint. Ratelimist apply. Trade a password
 |-------|------|-------------|
 | identifier | string(1:128) | Username or email address |
 | password | string(8:128) | Associated password |
+
+```json
+{
+  "token": "dig7qASJb4mEIIrgbu_ZgUlrLC2luEmCfdR0WGZupmSSbuMILekT0wSblUKM5iK9alkZ12f9zu6oVU2D_wuWHA"
+}
+```
