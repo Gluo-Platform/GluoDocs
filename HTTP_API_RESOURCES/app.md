@@ -25,7 +25,20 @@ limited to specific permissions.
 | creation_timestamp | unix timestamp | Unix timestamp of the creation date of the app | APP |
 
 ```json
-{"TODO": "exmaple app"}
+{
+  "id": "7494368590875856896",
+  "username": "TEST",
+  "avatar": "image/default.webp?e=1786812552&s=3_7oIcWPC6wX2Ok1rQX42SVt_ZH8YXQtjtB4G8ejhvk",
+  "permissions": 1,
+  "status": "Hi, I am a Gluo user!",
+  "banner": {
+    "type": "hex",
+    "value": "#000000"
+  },
+  "about": "",
+  "private": false,
+  "creation_timestamp": 1786796710.7006962
+}
 ```
 
 
@@ -70,7 +83,7 @@ send immediately after being added to a feed. It is important to note that this 
 ## Get current app
 
 {% hint icon="code" style="success" %}
-**`GET`** `/app/@me`
+**`GET`** `/app/@me/`
 {% endhint %}
 
 Returns the [app](app.md#app-object) object for the Authenticated client.
@@ -79,7 +92,7 @@ Returns the [app](app.md#app-object) object for the Authenticated client.
 ## Get app
 
 {% hint icon="code" style="success" %}
-**`GET`** `/app/{app.id}`
+**`GET`** `/app/{app.id}/`
 {% endhint %}
 
 Returns the [app](app.md#app-object) object for the provided id.
@@ -110,7 +123,8 @@ Apps are allowed to create a reaction in the name of a user under posts with an
 **`POST`** `/app/add`
 {% endhint %}
 
-Add a public app to a Group Feed.
+Add a public app to a Group Feed. Will immediately create a post, if it has 
+[on-add](#set-on-add-behaviour) behaviour setup.
 
 **JSON Params**
 

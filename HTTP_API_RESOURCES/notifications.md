@@ -32,7 +32,8 @@
 **`GET`** `/notifications/{sort_type}`
 {% endhint %}
 
-Could either be `all`, `unread` or `important`. Returns a [paginated (`key:notifications`)](/README.md#gluo-api-reference) list of 
+Could either be `all`, `unread` or `important`. Returns a 
+[paginated](/README.md#gluo-api-reference) list of 
 [notification](#notification-object) objects.
 
 

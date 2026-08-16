@@ -44,7 +44,7 @@ limited to specific permissions.
     {
       "icon": "fa-home",
       "id": "7494123429667278848",
-      "name": "fa-home",
+      "name": "Home",
       "type": "feed"
     }
   ],                                      /* @ME */
@@ -115,7 +115,7 @@ the relation status of the requesting and requested user.
 **`GET`** `/user/bookmarks/`
 {% endhint %}
 
-Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [post](./post.md#post-object) objects.
 
 
@@ -125,7 +125,7 @@ Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of
 **`GET`** `/user/archive/`
 {% endhint %}
 
-Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [post](./post.md#post-object) objects.
 
 
@@ -135,7 +135,7 @@ Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of
 **`GET`** `/user/{user.id}/posts`
 {% endhint %}
 
-Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [post](./post.md#post-object) objects.
 
 
@@ -145,7 +145,7 @@ Returns a [paginated (`key:posts`)](/README.md#gluo-api-reference) list of
 **`GET`** `/user/{user.id}/media`
 {% endhint %}
 
-Returns a [paginated (`key:media`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [user media]() objects.
 
 
@@ -155,7 +155,7 @@ Returns a [paginated (`key:media`)](/README.md#gluo-api-reference) list of
 **`GET`** `/user/{user.id}/reactions`
 {% endhint %}
 
-Returns a [paginated (`key:reactions`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [user media]() objects. Unless the visited user is also the requesting user,
 this will not include any reactions placed under posts of private authors.
 
@@ -179,5 +179,5 @@ this will not include any reactions placed under posts of private authors.
 **`GET`** `/user/{user.id}/apps`
 {% endhint %}
 
-Returns a [paginated (`key:apps`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [App](./app.md#app-object) objects.

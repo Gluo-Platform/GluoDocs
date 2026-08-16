@@ -50,32 +50,53 @@ sandboxed `iframe` with the `url` as origin.
 
 | field | type | description |
 |-------|------|-------------|
-| app_id | snowflake | Application ID |
+| id | snowflake | Application ID |
 | url | string | Application url |
 | key | string | Key signing the user and this instance |
 
 
-## Create & edit post
+```json
+{
+    "app_instance": {
+        "id": "7494368590875856896",
+        "key": "HDcLD+cUkL+O1uk3hFoYckSzAaL/ZUep2yoDPdeQUFo0geVKlxE0T8qcvuMbdI0ykA2qqobM4kx69EEgmKlLFuPoCnhOHexVPoVdD3A0HgXF/nLxuqMIeRfQL8n9RXh0t10XaF4ip/6f9AzJwd8osoeD11iuuFrr87JBV+bw9d+44Uv+QTqlUHSoHEAr8ChMg+5si1DVd1q8F8mOPrmr4ShBO1Phqnx9Gd47HXuZq0RIa5Hqp0eZbWB4Qdcm+C7QcFX5WJ8Z3zXitAXDY0VPJg1mQZpKhl7qJbIQW82lwjRSgG4g26F21XKzfLekN4cFR+xA50IO7ZCxiLzAO3bb9Q==",
+        "url": "https://example.com/gluo"
+    },
+    "author": {
+        "avatar": "image/default.webp?e=1786902627&s=PrmCpya0XOBQLplnI9ZeEDr_adwHute-375CPw45Hws",
+        "id": "7494368590875856896",
+        "permissions": 1,
+        "username": "TEST"
+    },
+    "creation_timestamp": 1786901850.9017985,
+    "description": "Hi there! Click the buttons below to use this app.",
+    "edit_timestamp": 1786901850.9018002,
+    "embed": null,
+    "id": "7494809580849860608",
+    "media": [],
+    "poll": []
+}
+```
+
+
+## Create post
 
 {% hint icon="code" style="info" %}
-**`POST`** `/post/save`
-{% endhint %}
-{% hint icon="code" style="warning" %}
-**`PATCH`** `/post/save`
+**`POST`** `/post/create`
 {% endhint %}
 
-Create or edit a post. Post with no contents (no quote, no description, no 
-media and no poll) will not be accepted. 
+Post with no contents (no quote, no description, no media and no poll) will not
+be accepted. 
 
 If the client is an App, it may set is_app to `true`, to attach an 
-[App Instance](#app-instance) to the post. Once set, this cannot be edited. Can only be 
-combined with a description.
+[App Instance](#app-instance) to the post. Once set, this cannot be edited. Can 
+only be combined with a description.
 
 **JSON Params**
 
 | field | type | description |
 |-------|------|-------------|
-| id? | snowflake | Unique post ID (required when editing) |
+| feed_id? | snowflake | Feed where post should be created |
 | quote_id? | snowflake | Quoted post ID |
 | reaction_quote_id? | snowflake | Quoted reaction ID |
 | description | string(1:1000)? | Draft description |
@@ -84,6 +105,7 @@ combined with a description.
 | is_app? | boolean | Whether post is app instance (cannot be edited), requires client to be [app](./app.md#app) |
 
 **Edit Media**
+
 | field | type | description |
 |-------|------|-------------|
 | old | snowflake list | List of currently associated Media that was not removed |
@@ -98,6 +120,29 @@ combined with a description.
 
 Will grant you a media-key which is required to authenticate requests to the 
 MediaApi. Returns a [media key]() object. Read more on uploading media [here]()
+
+
+## Edit post
+
+{% hint icon="code" style="warning" %}
+**`PATCH`** `/post/{post.id}/edit`
+{% endhint %}
+
+**JSON Params**
+
+| field | type | description |
+|-------|------|-------------|
+| description | string(1:1000)? | Draft description |
+| media | EditMedia | List of associated media |
+| poll | string(1:50) list | All options for the poll |
+
+**Edit Media**
+
+| field | type | description |
+|-------|------|-------------|
+| old | snowflake list | List of currently associated Media that was not removed |
+| new | snowflake list | List of new media IDs |
+| del | snowflaek list | List of media IDs that were deleted |
 
 
 ## Like post

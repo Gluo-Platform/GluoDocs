@@ -40,7 +40,8 @@ Remove given user as friend.
 **`GET`** `/user/relations/requests`
 {% endhint %}
 
-Returns a [paginated (`key:users`)](/README.md#http-api) list of [LARGE User](./user.md#user-object) objects.
+Returns a [paginated](/README.md#http-api) list of 
+[LARGE User](./user.md#user-object) objects.
 
 
 ## Get number of friend requests
@@ -73,7 +74,8 @@ Either `accept` or `reject` the friend request of the specified user.
 **`GET`** `/user/relations/friends`
 {% endhint %}
 
-Returns a [paginated (`key:users`)](/README.md#http-api) list of [LARGE User](./user.md#user-object) objects.
+Returns a [paginated](/README.md#http-api) list of 
+[LARGE User](./user.md#user-object) objects.
 
 
 ## Toggle following
@@ -99,7 +101,8 @@ removing it (unfollowing them).
 **`GET`** `/user/relations/followers`
 {% endhint %}
 
-Returns a [paginated (`key:users`)](/README.md#http-api) list of [LARGE User](./user.md#user-object) objects.
+Returns a [paginated](/README.md#http-api) list of 
+[LARGE User](./user.md#user-object) objects.
 
 
 ## Get following
@@ -108,7 +111,8 @@ Returns a [paginated (`key:users`)](/README.md#http-api) list of [LARGE User](./
 **`GET`** `/user/relations/following`
 {% endhint %}
 
-Returns a [paginated (`key:users`)](/README.md#http-api) list of [LARGE User](./user.md#user-object) objects.
+Returns a [paginated](/README.md#http-api) list of 
+[LARGE User](./user.md#user-object) objects.
 
 
 ## Remove follower
@@ -135,4 +139,5 @@ Toggle whether the requesting user blocked the client.
 **`GET`** `/user/relations/blocked`
 {% endhint %}
 
-Returns a [paginated (`key:users`)](/README.md#http-api) list of [LARGE User](./user.md#user-object) objects.
+Returns a [paginated](/README.md#http-api) list of 
+[LARGE User](./user.md#user-object) objects.

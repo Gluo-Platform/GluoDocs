@@ -41,7 +41,7 @@ unshareable is exclusive to Moderators.
 **`GET`** `/premium/gifts`
 {% endhint %}
 
-Returns a [paginated (`key:gifts`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [gift](#gift-object) objects.
 
 

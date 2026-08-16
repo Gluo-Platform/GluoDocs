@@ -15,23 +15,31 @@ Drafts are unfinished, unuploaded posts.
 | poll | string(1:50) list | All options for the poll |
 
 
-## Create & edit draft
+## Create draft
 
 {% hint icon="code" style="info" %}
 **`POST`** `/draft/create`
 {% endhint %}
-{% hint icon="code" style="warning" %}
-**`PUT`** `/draft/edit`
-{% endhint %}
-
 
 **JSON Params**
 
 | field | type | description |
 |-------|------|-------------|
-| id? | snowflake | Unique draft ID (required when editing) |
 | quote_id? | snowflake | Quoted post ID |
 | reaction_quote_id? | snowflake | Quoted reaction ID |
+| description | string(1:1000)? | Draft description |
+| media | EditMedia | List of associated media |
+| poll | string(1:50) list | All options for the poll |
+
+
+## Edit draft
+
+{% hint icon="code" style="warning" %}
+**`PATCH`** `/draft/{draft.id}/edit`
+{% endhint %}
+
+| field | type | description |
+|-------|------|-------------|
 | description | string(1:1000)? | Draft description |
 | media | EditMedia | List of associated media |
 | poll | string(1:50) list | All options for the poll |
@@ -43,7 +51,7 @@ Drafts are unfinished, unuploaded posts.
 **`GET`** `/drafts`
 {% endhint %}
 
-Returns a [paginated (`key:drafts`)](/README.md#gluo-api-reference) list of 
+Returns a [paginated](/README.md#gluo-api-reference) list of 
 [draft](#draft-object) objects.
 
 
