@@ -17,6 +17,15 @@ is created by the members of the feed. Content consists of
 | name | string(1:32) | Feed name |
 | icon | string(1:128) | Font-Awesome Icon **or** signed cdn url |
 
+```json
+{
+    "icon": "fa-home",
+    "id": 7494123429667278848,
+    "name": "fa-home",
+    "type": "feed"
+}
+```
+
 
 ## Create & edit personal feed
 
@@ -57,7 +66,7 @@ is created by the members of the feed. Content consists of
 | id? | snowflake | Unique feed ID (required when editing) |
 | public | boolean | Whether the feed is invite only |
 | name | string(1:32) | Feed name |
-| icon | string(1:128) | Font-Awesome Icon |
+| icon | string(1:128)? | Font-Awesome Icon |
 
 
 ## Get feeds

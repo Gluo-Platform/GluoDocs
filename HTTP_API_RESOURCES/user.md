@@ -18,7 +18,7 @@ limited to specific permissions.
 |-------|------|-------------|-------|
 | id | snowflake | Unique user ID | ALL |
 | username | string | Unique username (1-30 characters) | ALL |
-| avatar | [Media Access ULR]() | The user's avatar | ALL |
+| avatar | [Media Access ULR](/media.md#media-access-urls) | The user's avatar | ALL |
 | permissions | bitflags | User [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The user's status | LARGE |
 | banner | [BannerObject](#bannerobject) | The user's banner | USER |

@@ -16,7 +16,7 @@ limited to specific permissions.
 |-------|------|-------------|-------|
 | id | snowflake | Unique app ID | ALL |
 | username | string | Appname | ALL |
-| avatar | [MediaObject]() | The app's avatar | ALL |
+| avatar | [Media Access ULR](/media.md#media-access-urls) | The app's avatar | ALL |
 | permissions | bitflags | App [permissions](/permissions.md#general-permissions) | LARGE |
 | status | string | The app's status | LARGE |
 | banner | [BannerObject](./user.md#bannerobject) | The app's banner | APP |

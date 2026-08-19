@@ -59,7 +59,7 @@ sandboxed `iframe` with the `url` as origin.
 {
     "app_instance": {
         "id": "7494368590875856896",
-        "key": "HDcLD+cUkL+O1uk3hFoYckSzAaL/ZUep2yoDPdeQUFo0geVKlxE0T8qcvuMbdI0ykA2qqobM4kx69EEgmKlLFuPoCnhOHexVPoVdD3A0HgXF/nLxuqMIeRfQL8n9RXh0t10XaF4ip/6f9AzJwd8osoeD11iuuFrr87JBV+bw9d+44Uv+QTqlUHSoHEAr8ChMg+5si1DVd1q8F8mOPrmr4ShBO1Phqnx9Gd47HXuZq0RIa5Hqp0eZbWB4Qdcm+C7QcFX5WJ8Z3zXitAXDY0VPJg1mQZpKhl7qJbIQW82lwjRSgG4g26F21XKzfLekN4cFR+xA50IO7ZCxiLzAO3bb9Q==",
+        "key": "-AoyaSSHuLv0wrFGBVP5niEDYyRpAR1NG2qVx6KnF3Y",
         "url": "https://example.com/gluo"
     },
     "author": {
