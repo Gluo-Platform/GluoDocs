@@ -34,4 +34,5 @@ that both start from 1
 | create_posts | 2 | permission |
 | manage_content | 4 | permission | 
 | manage_members | 8 | permission |
-| manage_permissions | 16 | permission |
+| manage_feed | 16 | permission |
+| manage_permissions | 32 | permission |

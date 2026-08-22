@@ -27,11 +27,25 @@ is created by the members of the feed. Content consists of
 ```
 
 
-## Create & edit personal feed
+## Create personal feed
 
 {% hint icon="code" style="info" %}
 **`POST`** `/feed/create`
 {% endhint %}
+
+**JSON Params**
+
+| field | type | description |
+|-------|------|-------------|
+| name | string(1:32) | Feed name |
+| icon | string(1:128) | Font-Awesome Icon |
+| topics | string(1:32) list | List of interests |
+| prefer_media | boolean | Whether this feed should preference media |
+| anyone | boolean | Limited to friends & subscriptions or not |
+
+
+## Edit personal feed
+
 {% hint icon="code" style="warning" %}
 **`PUT`** `/feed/edit`
 {% endhint %}
@@ -41,19 +55,31 @@ is created by the members of the feed. Content consists of
 
 | field | type | description |
 |-------|------|-------------|
-| id? | snowflake | Unique feed ID (required when editing) |
+| id | snowflake | Unique feed ID |
 | name | string(1:32) | Feed name |
 | icon | string(1:128) | Font-Awesome Icon |
-| topics | string(1:32) list | List of interests |
+| topics | string(1:32) list? | List of interests |
 | prefer_media | boolean | Whether this feed should preference media |
 | anyone | boolean | Limited to friends & subscriptions or not |
 
 
-## Create & edit group feed
+## Create group feed
 
 {% hint icon="code" style="info" %}
 **`POST`** `/feed/group/create`
 {% endhint %}
+
+**JSON Params**
+
+| field | type | description |
+|-------|------|-------------|
+| public | boolean | Whether the feed is invite only |
+| name | string(1:32) | Feed name |
+| icon | string(1:128)? | Media |
+
+
+## Edit group feed
+
 {% hint icon="code" style="warning" %}
 **`PUT`** `/feed/group/edit`
 {% endhint %}
@@ -63,10 +89,10 @@ is created by the members of the feed. Content consists of
 
 | field | type | description |
 |-------|------|-------------|
-| id? | snowflake | Unique feed ID (required when editing) |
+| id | snowflake | Unique feed ID (required when editing) |
 | public | boolean | Whether the feed is invite only |
 | name | string(1:32) | Feed name |
-| icon | string(1:128)? | Font-Awesome Icon |
+| icon? | string(1:128)? | Media |
 
 
 ## Get feeds
@@ -84,7 +110,7 @@ parameter. Accepted values are `feed` and `group_feed`.
 ## Delete feed
 
 {% hint icon="code" style="danger" %}
-**`DELETE`** `/feed/{feed.type}/{feed.id}/delete`
+**`DELETE`** `/feed/{feed.id}/delete`
 {% endhint %}
 
 Deletes the feed if the User owns it.

@@ -1,8 +1,9 @@
-# Overview
+# App SDK
 
-Gluo Apps are available to [Group Feeds](/HTTP_API_RESOURCES/feed.md#group-feeds).
-Features explained here are only accessible to active [Apps](/HTTP_API_RESOURCES/app.md)
-through [App Instances](/HTTP_API_RESOURCES/post.md#app-instance).
+The Gluo App SDK can be used **client-side** to make communicating with Gluo
+easier. If your app is dependant on server-side logic, we do not have any 
+installable libraries or packages for that. We however have code snippets and 
+examples [here](todo).
 
 
 ## Install the SDK
@@ -79,6 +80,7 @@ user. Contains a payload _TODO: PROVIDE ACTUAL VALUES_
 ```json
 {
     "theme": "light",
+    "app_id": ...,
     "post_id": ...,
     "user_id": ...,
     "username": ...,

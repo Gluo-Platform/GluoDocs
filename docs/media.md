@@ -13,7 +13,7 @@ https://cdn.gluo.xyz/
 
 For this you will need **signed access urls**. These are structured as follows
 
-```shell
+```
 image/default.webp?e=1786784248&s=z-tm45mgujooLsMteDu7fedqdwKZohYke1I98F2QCdI
 └─ Media type      │            └─ HMAC Signature
       │            └─ Unix Expiration Timestamp

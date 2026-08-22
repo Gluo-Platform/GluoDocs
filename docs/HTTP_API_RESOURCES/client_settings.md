@@ -6,7 +6,9 @@
 **`PATCH`** `/client/settings/profile`
 {% endhint %}
 
-At least one field must be set.
+Not adding an optional field, means it will not update whatever it currently 
+is. If you want to reset any of these fields, pass an empty string. If the
+banner starts with #, it will be assumed to be a hex code.
 
 **JSON Params**
 
@@ -14,6 +16,8 @@ At least one field must be set.
 |-------|------|-------------|
 | status? | string(0:75) | Optional status |
 | about? | string(0:250) | Optional about |
+| avatar? | snowflake | New avatar ID |
+| banner? | snowflake \| string(7:7) | New banner ID |
 
 
 ## Update privacy
