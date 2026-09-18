@@ -67,7 +67,7 @@ Will send a reset password email to the user. Endpoint falls under [strict]() ra
 ## Confirm & Change password Reset
 
 {% hint icon="code" style="info" %}
-**`POST`** `/auth/password/reset`
+**`POST`** `/auth/password/change`
 {% endhint %}
 
 Allows the user to change set a new password given an authentication token.

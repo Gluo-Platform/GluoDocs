@@ -118,8 +118,19 @@ Deletes the feed if the User owns it.
 
 ## Get feed posts
 
+{% hint icon="code" style="success" %}
+**`GET`** `/feed/{feed.id}/posts`
+{% endhint %}
+
+Returns a [paginated](/README.md#gluo-api-reference) list of 
+[post](./post.md#post-object). Sends two [WebSocket Events](../WEBSOCKET_API/overview.md#posts) with post statistics.
+
 
 ## Get group feed posts
 
+{% hint icon="code" style="success" %}
+**`GET`** `/group/{feed.id}/posts`
+{% endhint %}
 
-## Get group feed post reactions
+Returns a [paginated](/README.md#gluo-api-reference) list of 
+[post](./post.md#post-object). Sends two [WebSocket Events](../WEBSOCKET_API/overview.md#posts) with post statistics.

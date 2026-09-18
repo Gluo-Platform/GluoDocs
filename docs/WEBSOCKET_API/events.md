@@ -44,7 +44,7 @@ Send when the `?statistics=true` parameter is appended when fetching a post.
 | bkd | boolean | Bookmarked the post |
 
 
-### 0004 Post Statistics Page
+### 0004 Multiple Post Statistics
 
 This event is always advanced by two 
 [0003 (Single Post Statistics)](#0003-single-post-statistics) events. This 
