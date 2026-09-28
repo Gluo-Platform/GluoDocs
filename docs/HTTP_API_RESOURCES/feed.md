@@ -101,10 +101,9 @@ is created by the members of the feed. Content consists of
 **`GET`** `/feeds`
 {% endhint %}
 
-Returns a [paginated](/README.md#gluo-api-reference) list of 
-[feed](#feed-object) objects, this includes personal and group feeds. If you
-want only feeds of a specific type, specify so with the `?type=` query 
-parameter. Accepted values are `feed` and `group_feed`.
+Returns a list of [feed](#feed-object) objects, this includes personal and 
+group feeds. If you want only feeds of a specific type, specify so with the 
+`?type=` query parameter. Accepted values are `feed` and `group_feed`.
 
 
 ## Delete feed

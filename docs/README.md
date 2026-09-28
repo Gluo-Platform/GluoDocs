@@ -95,7 +95,7 @@ pages are structured as follows.
 
 ```json
 {
-    "items": {...},
+    "items": [...],
     "next_page": true
 }
 ```
